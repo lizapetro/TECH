@@ -23,6 +23,9 @@
             margin: 0 20px;
         }
     }
+    &__menu {
+        display: none;
+    }
 }
 
 .main-baner {
@@ -868,5 +871,412 @@
     }
     &__scolcovo {
         width: 74.3px;
+    }
+}
+
+// TABLET ADAPTIVE
+
+@media (max-width: 1024px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header {
+        max-width: 768px;
+        height: 5rem;
+        width: 100%;
+        padding: 0 20px;
+        &__navigation {
+            display: none;
+        }
+        &__logo {
+            img {
+                width: 187.5px;
+                height: 20px;
+            }
+        }
+        &__contacts {
+            .contacts-tg {
+                margin: 0 20px 0 30px;
+            }
+            a {
+                display: flex;
+                align-items: center;
+                img {
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+        }
+        &__menu {
+            margin-left: 30px;
+            display: block;
+            width: 28px;
+            height: 25px;
+        }
+    }
+    .main-baner {
+        width: 100%;
+        max-width: 768px;
+        padding: 0 38px; 
+        margin-top: 88px;
+        &__title {
+            width: 523px;
+        }
+        &__description {
+            margin-top: 49px;
+        }
+        button {
+            margin-top: 43px;
+            width: 200px;
+            span {
+                color: $white;
+            }
+        }
+    }
+    .partners {
+        width: 100%;
+        max-width: 768px;
+        flex-wrap: wrap;
+        padding: 0 24px;
+        justify-content: center;
+        height: 200px;
+        img {
+            margin-right: 120px;
+            &:nth-child(1) {
+                width: 97px;
+                height: 48px;
+                order: 1;
+            }
+            &:nth-child(2) {
+                width: 122px;
+                height: 34.77px;
+                order: 2;
+            }
+            &:nth-child(3) {
+                width: 237px;
+                height: 39px;
+                order: 4;
+                margin-right: 100px;
+            }
+            &:nth-child(4) {
+                width: 113px;
+                height: 36px;
+                order: 3;
+                margin-right: 0;
+            }
+            &:nth-child(5) {
+                width: 264px;
+                height: 26px;
+                order: 5;
+                margin-right: 0;
+            }
+        }
+    }
+    .mobile-app {
+        width: 100%;
+        max-width: 768px;
+        margin-top: 100px;
+        .advantages {
+            margin: 49px 0 108px;
+            width: 402px;
+        }
+        &-swiper__wrapper {
+            &::before {
+                height: 345px !important;
+                top: 73px;
+            }
+        }
+        .swiper-container {
+            width: 768px !important;
+            height: auto !important;
+        }
+        &__slider-card {
+            padding: 0 53px 0 81px;
+            .mobile-img {
+                width: 237px;
+                height: 492px;
+                margin-right: 65px;
+            }
+        }
+    }
+    .admin-panel {
+        width: 100%;
+        max-width: 768px;
+        margin-top: 130px;
+        .advantages {
+            width: 546px;
+            margin: 43px 0 90px; 
+        }
+        .swiper-container {
+            width: 768px !important;
+            height: auto !important;
+        }
+        &__card {
+            img {
+                width: 625px;
+                height: 360px;
+                margin-top: 74px;
+            }
+        }
+        &__title {
+            margin: 0;
+        }
+        &__description {
+            margin-top: 29px;
+        }
+    }
+    .booking-panel {
+        margin-top: 142px;
+        width: 100%;
+        max-width: 768px;
+        .advantages {
+            margin: 51px 0 105px;
+        }
+        .opportunity-item {
+            &:not(:last-child) {
+                margin-right: 110px;
+            }
+            img {
+                width: 28px;
+                height: 27px;
+                margin-bottom: 11px;
+            }
+        }
+        .iframe-wrapper {
+            margin: 72px 0 122px;
+            width: 608px;
+            height: 425.26px;
+            iframe {
+                width: 578.26px;
+                height: 396.65px;
+            }
+        }
+    }
+    .how-it-work {
+        padding-bottom: 72px;
+        &__wrapper {
+            width: 100%;
+            max-width: 768px;
+            h1 {
+                margin-top: 59px;
+            }
+        }
+        &__instruction {
+            margin-top: 60px;
+            .instruction__item {
+                h3 {
+                    margin-bottom: 30px;
+                }
+                .main-text-2 {
+                    margin-bottom: 13px;
+                }
+            }
+            &:nth-child(2) {
+                .instruction__item {
+                    width: 249px;
+                    margin-left: 80px;
+                }
+                img {
+                    width: 221px;
+                    height: 163px;
+                    margin-left: 133px;
+                    margin-top: 20px;
+                }
+            }
+            &:nth-child(3) {
+                .instruction__item {
+                    width: 339px;
+                }
+                img {
+                    width: 301px;
+                    height: 171px;
+                    margin-left: 46px;
+                    margin-right: 37px;
+                }
+            }
+            &:nth-child(4) {
+                .instruction__item {
+                    width: 265px;
+                    margin-left: 80px;
+                }
+                img {
+                    width: 278.71px;
+                    height: 146.35px;
+                    margin-left: 53px;
+                }
+            }
+        }
+    }
+    .system-options {
+        margin-top: 136px;
+    }
+    .free-app {
+        height: 420px;
+        min-height: 420px;
+        &__offer-info {
+            align-items: flex-start;
+            span {
+                color: $white;
+            }
+            &-wrapper {
+                margin-left: 40px;
+                width: 217px;
+            }
+        }
+        &__form {
+            form {
+                input {
+                    margin-bottom: 20px;
+                    max-width: 294px;
+                }
+                button {
+                    margin-top: 20px;
+                    height: 60px;
+                    span {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    .advantages {
+        margin-top: 132px;
+        width: 100%;
+        max-width: 768px;
+        padding: 0 40px;
+        margin-bottom: 40px;
+        h1 {
+            margin: 43px 0 26px;
+        }
+        &__wrapper-items {
+            flex-wrap: wrap;
+        }
+        &__item {
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-bottom: 73px;
+            justify-content: center;
+            h4 {
+                margin-left: 59px;
+            }
+            &:nth-child(1) {
+                min-width: 275px;
+                img {
+                    width: 115px;
+                    height: 100px;
+                    margin-bottom: 31px;
+                }
+                h4 {
+                    margin-bottom: 60px;
+                }
+            }
+            &:nth-child(2) {
+                min-width: 290px;
+                img {
+                    width: 134px;
+                    height: 139px;
+                }
+                span {
+                    width: 242px;
+                }
+                h4 {
+                    margin-bottom: 0;
+                }
+            }
+            &:nth-child(3) {
+                min-width: 270px;
+                img {
+                    width: 99px;
+                    height: 80px;
+                }
+                span {
+                    width: 244px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        height: 52px;
+        padding: 0 10px;
+        width: 100%;
+        max-width: 320px;
+        &__logo {
+            img {
+                width: 113px;
+                height: 12px;
+            }
+        }
+        &__contacts {
+            .phone {
+                display: none;
+            }
+            .contacts-tg {
+                margin: 0 11px 0 0;
+            }
+        }
+        &__menu {
+            margin-left: 27px;
+        }
+        
+    }
+    .main-baner {
+        width: 100%;
+        max-width: 320px;
+        padding: 0 13px; 
+        margin-top: 34px;
+        &__title {
+            width: 268px;
+        }
+        &__description {
+            margin-top: 36px;
+            width: 282px;
+        }
+        button {
+            margin-top: 47px;
+            width: 155px;
+        }
+    }
+    .partners {
+        width: 100%;
+        max-width: 320px;
+        flex-wrap: wrap;
+        padding: 0 24px;
+        height: 100px;
+        img {
+            margin-right: 30px;
+            &:nth-child(1) {
+                width: 61px;
+                height: 29px;
+                order: 1;
+            }
+            &:nth-child(2) {
+                width: 79px;
+                height: 23px;
+                order: 2;
+            }
+            &:nth-child(3) {
+                width: 124px;
+                height: 20px;
+                order: 4;
+                margin-right: 20px;
+            }
+            &:nth-child(4) {
+                width: 71px;
+                height: 22.97px;
+                order: 3;
+                margin-right: 0;
+            }
+            &:nth-child(5) {
+                width: 126px;
+                height: 12px;
+                order: 5;
+                margin-right: 0;
+            }
+        }
     }
 }

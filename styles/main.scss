@@ -4,6 +4,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 body {
@@ -152,4 +153,193 @@ button {
 
 .font-color_blue {
     color: $blue2
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+    * {
+        color: $black2;
+    }
+    .header-1_tablet {
+        font-family: 'Gilroy' !important;
+        font-weight: 400 !important;
+        font-size: 73px !important;
+        line-height: 120% !important;
+        letter-spacing: -0.01em !important;
+    }
+    .header-2_tablet {
+        font-family: 'PIPS' !important;
+        font-weight: 400 !important;
+        font-size: 73px !important;
+        line-height: 120% !important;
+        letter-spacing: -0.01em !important;
+    }
+    .header-3_tablet {
+        font-family: 'Gilroy' !important;
+        font-weight: 400 !important;
+        font-size: 46px !important;
+        line-height: 120% !important;
+        letter-spacing: -0.01em !important;
+    }
+    .header-4_tablet {
+        font-family: 'PIPS' !important;
+        font-weight: 400 !important;
+        font-size: 46px !important;
+        line-height: 120% !important;
+        letter-spacing: -0.01em !important;
+    }
+    .header-5_tablet {
+        font-family: 'Gilroy' !important;
+        font-weight: 400 !important;
+        font-size: 28px !important;
+        line-height: 150% !important;
+        letter-spacing: -0.01em !important;   
+    }
+    .header-6_tablet {
+        font-family: 'Gilroy' !important;
+        font-weight: 400 !important;
+        font-size: 20px !important;
+        line-height: 150% !important;
+        letter-spacing: -0.02em !important;
+    }
+    .main-text-1_tablet {
+        font-family: 'Active Grotesk Corp' !important;
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        line-height: 160% !important;
+        letter-spacing: -0.01em !important;
+    }
+    .main-text-2_tablet {
+        font-family: 'Gilroy' !important;
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        line-height: 150% !important;
+        letter-spacing: -0.02em !important;
+    }
+    .additional-text-1_tablet {
+        font-family: 'Active Grotesk Corp' !important;
+        font-weight: 400 !important;
+        font-size: 14px !important;
+        line-height: 180% !important;
+        letter-spacing: -0.01em !important;
+    }
+    .additional-text-2_tablet {
+        font-family: 'PIPS' !important;
+        font-weight: 400 !important;
+        font-size: 14px !important;
+        line-height: 130% !important;
+        letter-spacing: -0.01em !important;
+    }
+    .additional-text-3_tablet {
+        font-family: 'Gilroy' !important;
+        font-weight: bold !important;
+        font-size: 14px !important;
+        line-height: 17px !important;
+    }
+    button {
+        height: 60px;
+        border-radius: 5px;
+        font-family: 'Active Grotesk Corp';
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: -0.01em;
+    }
+    input {
+        height: 50px;
+        font-family: 'Active Grotesk Corp';
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 180%;
+        letter-spacing: -0.01em;
+        border-radius: 5px;
+        box-shadow: inset 0.481414px 0.962827px 2.40707px rgba(0, 0, 0, 0.08);
+    }
+}
+
+@media (max-width: 769px) {
+    .header-1_mobile {
+        font-family: 'Gilroy' !important;
+        font-weight: 400 !important;
+        font-size: 37px !important;
+        line-height: 120% !important;
+        letter-spacing: -0.01em !important;
+    }
+    .header-2_mobile {
+        font-family: 'PIPS' !important;
+        font-weight: 400 !important;
+        font-size: 37px !important;
+        line-height: 120% !important;
+        letter-spacing: -0.01em !important;
+    }
+    .header-3_mobile {
+        font-family: 'Gilroy' !important;
+        font-weight: 400 !important;
+        font-size: 27px !important;
+        line-height: 120% !important;
+        letter-spacing: -0.01em !important;
+    }
+    .header-4_mobile {
+        font-family: 'PIPS' !important;
+        font-weight: normal !important;
+        font-size: 27px !important;
+        line-height: 120% !important;
+        letter-spacing: -0.01em !important;
+    }
+    .header-5_mobile {
+        font-family: 'Gilroy' !important;
+        font-weight: normal !important;
+        font-size: 21px !important;
+        line-height: 150% !important;
+        letter-spacing: -0.02em !important;
+    }
+    .main-text-1_mobile {
+        font-family: 'Active Grotesk Corp' !important;
+        font-weight: normal !important;
+        font-size: 16px !important;
+        line-height: 160% !important;   
+        letter-spacing: -0.01em !important;
+    }
+    .main-text-2_mobile {
+        font-family: 'Gilroy' !important;
+        font-weight: normal !important;
+        font-size: 16px !important;
+        line-height: 150% !important;
+        letter-spacing: -0.02em !important; 
+    }
+    .additional-text-1_mobile {
+        font-family: 'Active Grotesk Corp' !important;
+        font-weight: normal !important;
+        font-size: 14px !important;
+        line-height: 180% !important;
+        letter-spacing: -0.01em !important;
+    }
+    .additional-text-2_mobile {
+        font-family: 'Gilroy' !important;
+        font-style: normal !important;
+        font-weight: bold !important;
+        font-size: 14px !important;
+        line-height: 17px !important;
+    }
+    .additional-text-3_mobile {
+        font-family: 'PIPS' !important;
+        font-weight: normal !important;
+        font-size: 16px !important;
+        line-height: 150% !important;
+        letter-spacing: -0.01em !important;
+    }
+    .link_mobile {
+        font-family: 'Active Grotesk Corp' !important;
+        font-weight: normal !important;
+        font-size: 14px !important;
+        line-height: 180% !important;
+        letter-spacing: -0.01em !important;
+        text-decoration-line: underline !important;
+    }
+    .button {
+        height: 50px;
+    }
 }
