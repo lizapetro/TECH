@@ -339,7 +339,15 @@ button {
         letter-spacing: -0.01em !important;
         text-decoration-line: underline !important;
     }
-    .button {
+    button {
         height: 50px;
+    }
+    input {
+        height: 50px;
+        font-family: 'Active Grotesk Corp';
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 180%;
+        letter-spacing: -0.01em;
     }
 }
