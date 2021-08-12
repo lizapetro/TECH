@@ -20,27 +20,27 @@
     <nav class='header__navigation'>
       <ul>
         <li class='main-text-1'>
-          <a>Приложение</a>
+          <a href="#app">Приложение</a>
         </li>
         <li class='main-text-1'>
-          <a>Админка</a>
+          <a href="#admin-panel">Админка</a>
         </li>
         <li class='main-text-1'>
-          <a>Как это работает</a>
+          <a href="#how-it-work">Как это работает</a>
         </li>
         <li class='main-text-1'>
-          <a>Контакты</a>
+          <a href='#our-contacts'>Контакты</a>
       </li>
       </ul>
     </nav>
     <div class='header__contacts'>
-      <span class='phone main-text-1 main-text-1_tablet'>
+      <a href="tel:+7 (812) 241 12 73" class='phone main-text-1 main-text-1_tablet'>
         +7 (812) 241 12 73
-      </span>
-      <a class='contacts-tg' href="">
+      </a>
+      <a class='contacts-tg' href="https://t.me/simple_office">
         <img src="./assets/icons/telegram-icon.svg" alt="telegram">
       </a>
-      <a href="">
+      <a href="https://wa.me/qr/HPYGOBEOKFK7B1">
         <img src="./assets/icons/whatsapp-icon.svg" alt="whatsapp">
       </a>
       <div class="header__menu">
@@ -48,7 +48,20 @@
           <rect width="28" height="2" fill="#66D1FC"/>
           <rect y="12" width="28" height="2" fill="#66D1FC"/>
           <rect y="23" width="28" height="2" fill="#66D1FC"/>
-        </svg>   
+        </svg>
+        <div class="menu-popup">
+          <div class="menu-popup__btn-close">
+            <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.61621 25.75L26.4697 1.10352" stroke="#66D1FC" stroke-width="2"/>
+              <path d="M26.4697 26.1035L1.39335 1.20584" stroke="#66D1FC" stroke-width="2"/>
+            </svg>       
+          </div>
+          <a href="#app" class="main-text-1_tablet">Приложение</a>
+          <a href="#admin-panel" class="main-text-1_tablet"> Админка</a>
+          <a href="#how-it-work" class="main-text-1_tablet">Как это работает</a>
+          <a href="#our-contacts" class="main-text-1_tablet">Контакты</a>
+          <a href="tel:+7 (812) 241 12 73" class="main-text-1_tablet">+7 (812) 241 12 73</a>      
+        </div> 
       </div>
     </div>
   </header>
@@ -80,7 +93,7 @@
   </section>
 
   <!-- MOBILE APP -->
-  <section class="mobile-app feature">
+  <section id="app" class="mobile-app feature">
     <div class="title">
       <span class="main-text-1 main-text-1_tablet additional-text-1_mobile">
         Мобильное приложение 
@@ -94,7 +107,9 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide mobile-app__slider">
             <div class="mobile-app__slider-card">
-              <img class='mobile-img' src="./assets/images/mobile_1.png" alt="">
+              <div class="mobile-img__wrapper">
+                <img class='mobile-img' src="./assets/images/mobile_1.png" alt="">
+              </div>
               <div class="card-info">
                 <div class="card-title main-text-3 header-5_tablet header-5_mobile">
                   Бронируй рабочие места <br> и переговорные комнаты 
@@ -102,7 +117,7 @@
                 <div class="card-description">
                   <div class="card-description__item">
                     <img src="./assets/icons/work-place.svg" alt="">
-                    <span class="title main-text-4 additional-text-1_tablet additional-text-1_mobile">команда</span>
+                    <span class="title main-text-4 additional-text-1_tablet additional-text-1_mobile">рабочее место</span>
                   </div>
                   <div class="card-description__item">
                     <img src="./assets/icons/time.svg" alt="">
@@ -118,7 +133,9 @@
           </div>
           <div class="swiper-slide mobile-app__slider">
             <div class="mobile-app__slider-card">
-              <img class='mobile-img' src="./assets/images/mobile_2.png" alt="">
+              <div class="mobile-img__wrapper">
+                <img class='mobile-img' src="./assets/images/mobile_2.png" alt="">
+              </div>
               <div class="card-info">
                 <div class="card-title main-text-3 header-5_tablet header-5_mobile">
                   Работай вместе с командой
@@ -142,7 +159,9 @@
           </div>
           <div class="swiper-slide mobile-app__slider">
             <div class="mobile-app__slider-card">
-              <img class='mobile-img' src="./assets/images/mobile_3.png" alt="">
+              <div class="mobile-img__wrapper">
+                <img class='mobile-img' src="./assets/images/mobile_3.png" alt="">
+              </div>
               <div class="card-info">
                 <div class="card-title main-text-3 header-5_tablet header-5_mobile">
                   Выбирай точки интереса <br>на карте
@@ -165,15 +184,19 @@
             </div>
           </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next">
+          <img src="./assets/icons/arrow.svg" alt="">
+        </div>
+        <div class="swiper-button-prev">
+          <img src="./assets/icons/arrow.svg" alt="">
+        </div>
       </div>
     </div>
     
   </section>
 
   <!-- ADMIN PANEL -->
-  <section class="admin-panel feature">
+  <section id="admin-panel" class="admin-panel feature">
     <div class="title">
       <span class="main-text-1 main-text-1_tablet additional-text-1_mobile">
         Адиминка
@@ -216,8 +239,8 @@
         </div>
 
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"><img src="./assets/icons/arrow.svg" alt=""></div>
+      <div class="swiper-button-prev"><img src="./assets/icons/arrow.svg" alt=""></div>
     </div>
   </section>
 
@@ -259,7 +282,7 @@
 
   <!-- HOW IT WORK -->
   
-  <section class="how-it-work block_100vw">
+  <section id="how-it-work" class="how-it-work block_100vw">
     <div class="how-it-work__wrapper">
       <h1 class="header-3_tablet header-3_mobile">
         Как это работает?
@@ -294,7 +317,7 @@
 
   <!-- SYSTEM OPTIONS -->
 
-  <section class="system-options feature">
+  <!-- <section class="system-options feature">
     <div class="title">
       <span class="main-text-1 main-text-1_tablet additional-text-1_mobile">
         Варианты системы
@@ -302,6 +325,9 @@
     </div>
     <div class="system-options__wrapper">
       <div class="system-options__item">
+        <div class="round-item">
+
+        </div>
         <span class="h7 header-3_tablet header-1_mobile">
           SAAS
         </span>
@@ -324,7 +350,7 @@
         </span>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- FREE APP FORM -->
 
@@ -351,10 +377,16 @@
         <input 
           placeholder="E-mail"
         >
-        <button>
-          <span class="main-text-1 main-text-1_tablet main-text-1_mobile">Отправить заявку</span>
+        <button class="free-app__btn main-text-1 main-text-1_tablet main-text-1_mobile">
+          Отправить заявку
         </button>
       </form>
+    </div>
+    <div class="free-app__complete">
+      <h1 class="header-1_tablet header-1_mobile">Спасибо!</h1>
+      <span class="main-text-2 header-5_tablet header-5_mobile">
+        Заявка получена. Скоро мы свяжемся с вами.
+      </span>
     </div>
   </section>
 
@@ -395,18 +427,26 @@
   <!-- HOW TO CONTACT YOU -->
 
   <section class="contact-form block_100vw">
-    <div class="contact-form__wrapper">
+    <div class="contact-form__wrapper contact-form__form">
       <h2 class="header-5_tablet header-5_mobile">Остались вопросы?</h2>
-      <form>
+      <form action="">
         <input
           placeholder="Имя"
         >
         <input
           placeholder="E-mail"
         >
-        <button> <span class="main-text-1 main-text-1_tablet main-text-1_mobile">Отправить</span></button>
+        <button class="contact-form__btn main-text-1 main-text-1_tablet main-text-1_mobile">
+          Отправить
+        </button>
       </form>
-    </div> 
+    </div>
+    <div class="contact-form__wrapper contact-form__complete">
+      <h1 class="header-1_tablet header-1_mobile">Спасибо!</h1>
+      <span class="main-text-2 header-5_tablet header-5_mobile">
+        Заявка получена. Скоро мы свяжемся с вами.
+      </span>
+    </div>
   </section>
 
   <!-- APPLICATION FOR -->
@@ -447,19 +487,27 @@
   <!-- TEST SYSTEM FORM -->
 
   <section class="test-system-form block_100vw">
-    <span class="main-text-1 main-text-1_tablet main-text-1_mobile">30 дней бесплатно</span>
-    <h2 class="header-5_tablet header-5_mobile">Хочешь протестировать сиcтему?</h2>
-    <form action="">
-      <div class="test-system-form__row">
-        <input placeholder='Имя' type="text">
-        <input placeholder='Телефон' type="text">
-      </div>
-      <div class="test-system-form__row">
-        <input placeholder='E-mail' type="text">
-        <input placeholder='Компания' type="text">
-      </div>
-      <button class="main-text-1_tablet main-text-1_mobile">Отправить заявку</button>
-    </form>
+    <div class="test-system-form__wrapper form">
+      <span class="main-text-1 main-text-1_tablet main-text-1_mobile">30 дней бесплатно</span>
+      <h2 class="header-5_tablet header-5_mobile">Хочешь протестировать сиcтему?</h2>
+      <form action="">
+        <div class="test-system-form__row">
+          <input placeholder='Имя' type="text">
+          <input placeholder='Телефон' type="text">
+        </div>
+        <div class="test-system-form__row">
+          <input placeholder='E-mail' type="text">
+          <input placeholder='Компания' type="text">
+        </div>
+        <button class="main-text-1 main-text-1_tablet main-text-1_mobile btn-complete">Отправить заявку</button>
+      </form>
+    </div>
+    <div class="test-system-form__wrapper request-complete">
+      <h1 class="header-1_tablet header-1_mobile">Спасибо!</h1>
+      <span class="main-text-2 header-5_tablet header-5_mobile">
+        Заявка получена. Скоро мы свяжемся с вами.
+      </span>
+    </div>
   </section>
 
   <!-- OUR CLIENTS -->
@@ -476,46 +524,58 @@
 
   <!-- REVIEWS -->
   <section class="reviews">
-    <div class="review__item">
-      <div class="review-tags">
-        <span class="font_pips additional-text-2_tablet additional-text-3_mobile">#гибкий офис</span>
-        <span class="font_pips additional-text-2_tablet additional-text-3_mobile">#supporteam </span>
-        <span class="font_pips additional-text-2_tablet additional-text-3_mobile">#meetingroom</span>
-      </div>
-      <h2 class="header-5_tablet header-5_mobile">Полезный сервис. Просто внедряется <br> в бизнес-процессы компании и не вызывает<br> отторжения у пользователей.</h2>
-      <div class="review-autor">
-        <img src="./assets/images/photo-autor-1.png" alt="" class="review-autor__photo">
-        <span class="main-text-3 header-6_tablet header-5_mobile">Смирнова Марина</span>
-        <span class="main-text-1 main-text-1_tablet additional-text-1_mobile">Менеджер B2B Mobile</span>
-        <span class="main-text-1 autor__company main-text-1_tablet additional-text-1_mobile">NBCom Group</span>
-      </div>
-    </div>
-    <div class="review__item">
-      <div class="review-tags">
-        <span class="font_pips additional-text-2_tablet additional-text-3_mobile">#офисlife</span>
-        <span class="font_pips additional-text-2_tablet additional-text-3_mobile">#flexoffice</span>
-        <span class="font_pips additional-text-2_tablet additional-text-3_mobile">#ITшники</span>
-      </div>
-      <h2 class="header-5_tablet header-5_mobile">Simple Office помогает нашей компании <br>организовать работу сотрудников с гибким <br>графиком. Часто пользуемся приложением, <br>особенно, когда день расписан по часам.</h2>
-      <div class="review-autor">
-        <img src="./assets/images/photo-autor-2.png" alt="" class="review-autor__photo">
-        <span class="main-text-3 header-6_tablet header-5_mobile">Станислав Жуков</span>
-        <span class="main-text-1 main-text-1_tablet additional-text-1_mobile">IT support engineer</span>
-        <span class="main-text-1 autor__company main-text-1_tablet additional-text-1_mobile">АВИТО</span>
-      </div>
-    </div>
-    <div class="review__item">
-      <div class="review-tags">
-        <span class="font_pips additional-text-2_tablet additional-text-3_mobile">#proptech</span>
-        <span class="font_pips additional-text-2_tablet additional-text-3_mobile">#startup</span>
-        <span class="font_pips additional-text-2_tablet additional-text-3_mobile">#ux/ui</span>
-      </div>
-      <h2 class="header-5_tablet header-5_mobile">Моя экспертиза позволяет говорить, что <br>ребята смогли сделать не только полезный и<br> удобный, но красивый с точки зрения <br>интерфейсов сервис.</h2>
-      <div class="review-autor">
-        <img src="./assets/images/photo-autor-3.png" alt="" class="review-autor__photo">
-        <span class="main-text-3 header-6_table header-5_mobilet">Роман Евстратов</span>
-        <span class="main-text-1 main-text-1_tablet additional-text-1_mobile">Co-Founder and CEO</span>
-        <span class="main-text-1 autor__company main-text-1_tablet additional-text-1_mobile">PropTechRussia</span>
+    <div class="reviews-swiper__wrapper">
+      <div class="swiper-container reviews-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide review__item">
+            <div class="review-tags">
+              <span class="font_pips additional-text-2_tablet additional-text-3_mobile">#офисlife</span>
+              <span class="font_pips additional-text-2_tablet additional-text-3_mobile">#flexoffice</span>
+              <span class="font_pips additional-text-2_tablet additional-text-3_mobile">#meetingroom</span>
+            </div>
+            <h2 class="header-5_tablet header-5_mobile">Полезный сервис. Просто внедряется в бизнес-процессы компании и не вызывает отторжения у пользователей.</h2>
+            <div class="review-autor">
+              <img src="./assets/images/photo-autor-1.png" alt="" class="review-autor__photo">
+              <span class="main-text-3 header-6_tablet header-5_mobile">Смирнова Марина</span>
+              <span class="main-text-1 main-text-1_tablet additional-text-1_mobile">Менеджер B2B Mobile</span>
+              <span class="main-text-1 autor__company main-text-1_tablet additional-text-1_mobile">NBCom Group</span>
+            </div>
+          </div>
+          <div class="swiper-slide review__item">
+            <div class="review-tags">
+              <span class="font_pips additional-text-2_tablet additional-text-3_mobile">#гибкий офис</span>
+              <span class="font_pips additional-text-2_tablet additional-text-3_mobile">#supporteam</span>
+              <span class="font_pips additional-text-2_tablet additional-text-3_mobile">#ITшники</span>
+            </div>
+            <h2 class="header-5_tablet header-5_mobile">Simple Office помогает нашей компании организовать работу сотрудников с гибким графиком. Часто пользуемся приложением, особенно, когда день расписан по часам.</h2>
+            <div class="review-autor">
+              <img src="./assets/images/photo-autor-2.png" alt="" class="review-autor__photo">
+              <span class="main-text-3 header-6_tablet header-5_mobile">Станислав Жуков</span>
+              <span class="main-text-1 main-text-1_tablet additional-text-1_mobile">IT support engineer</span>
+              <span class="main-text-1 autor__company main-text-1_tablet additional-text-1_mobile">АВИТО</span>
+            </div>
+          </div>
+          <div class="swiper-slide review__item">
+            <div class="review-tags">
+              <span class="font_pips additional-text-2_tablet additional-text-3_mobile">#proptech</span>
+              <span class="font_pips additional-text-2_tablet additional-text-3_mobile">#startup</span>
+              <span class="font_pips additional-text-2_tablet additional-text-3_mobile">#ux/ui</span>
+            </div>
+            <h2 class="header-5_tablet header-5_mobile">Моя экспертиза позволяет говорить, что ребята смогли сделать не только полезный и удобный, но красивый с точки зрения интерфейсов сервис.</h2>
+            <div class="review-autor">
+              <img src="./assets/images/photo-autor-3.png" alt="" class="review-autor__photo">
+              <span class="main-text-3 header-6_table header-5_mobilet">Роман Евстратов</span>
+              <span class="main-text-1 main-text-1_tablet additional-text-1_mobile">Co-Founder and CEO</span>
+              <span class="main-text-1 autor__company main-text-1_tablet additional-text-1_mobile">PropTechRussia</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next">
+          <img src="./assets/icons/arrow.svg" alt="">
+        </div>
+        <div class="swiper-button-prev">
+          <img src="./assets/icons/arrow.svg" alt="">
+        </div>
       </div>
     </div>
   </section>
@@ -527,16 +587,16 @@
       <div class="news-subscription__social-network">
         <span class="font_pips additional-text-2_tablet additional-text-3_mobile">тут мы пишем о лайфхаках офисной жизни:)</span>
         <div class="social-network__wrapper">
-          <a href="">
+          <a href="https://www.youtube.com/channel/UCDagZJRf79ncODSSXAHYvkw">
             <img src="./assets/icons/youtube.svg" alt="">
           </a>
-          <a href="">
-            <img src="./assets/icons/facebook.svg" alt="">
+          <a href="https://www.facebook.com/liissmarthouse">
+            <img src="./assets/icons/facebook.svg" alt="https://www.facebook.com/liissmarthouse">
           </a>
-          <a href="">
-            <img src="./assets/icons/instagram-icon.svg" alt="">
+          <a href="https://vk.com/liissmarthouse">
+            <img src="./assets/icons/vk-icon.svg" alt="">
           </a>
-          <a href="">
+          <a href="https://www.instagram.com/liis_engineering/">
             <img src="./assets/icons/instagram-icon.svg" alt="">
           </a>
         </div>
@@ -546,16 +606,16 @@
 
   <!-- FOOTER -->
 
-  <footer class="footer">
+  <footer id="our-contacts" class="footer">
     <div class="footer__main-info">
       <img class='main-info__logo' src="./assets/icons/icon-logo.svg" alt="">
-      <h3 class="header-5_tablet header-5_mobile">+7 (812) 241 12 73</h3>
+      <a href='tel:+7 (812) 241 12 73' class="footer-phone header-5_tablet header-5_mobile">7 (812) 241 12 73</a>
       <span class="main-text-1 additional-text-1_tablet main-text-1_mobile">Санкт-Петербург, Аптекарская наб., д. 20, лит. А</span>
       <div class="app-btn-group">
-        <a href="">
+        <a href="https://play.google.com/store/apps/details?id=ru.liis.simpleoffice&hl=ru&gl=US">
           <img src="./assets/images/googlePLAY.png" alt="">
         </a>
-        <a href="">
+        <a href="https://apps.apple.com/ru/app/simple-office/id1524278405">
           <img src="./assets/images/appleSTORE.png" alt="">
         </a>   
       </div>
@@ -572,10 +632,10 @@
           Входит в реестр отечественного ПО
         </span>
         <span class="main-text-1 additional-text-1_tablet main-text-1_mobile">
-          Сайт является продуктом компании <a href="">ЛИИС</a>
+          Сайт является продуктом компании <a href="https://main.liis.su">ЛИИС</a>
         </span>
       </div>
-      <a href="" class="privacy-policy link tablet TECH/additional text_1 additional-text-1_mobile">
+      <a href="https://smart.liis.su/privacypolicy" class="privacy-policy link tablet TECH/additional text_1 additional-text-1_mobile">
         Политика конфиденциальности © 2021 Все права защищены
       </a>
     </div>
@@ -584,6 +644,8 @@
 
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
   <script>
     const mobileAppSwiper  = new Swiper(".mobile-app-swiper", {
       navigation: {
@@ -599,6 +661,58 @@
       },
       loop: true,
     });
+    const reviewsSwiper  = new Swiper(".reviews-swiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      loop: true,
+    });
+
+    const testimgSystemForm = document.querySelector('.test-system-form')
+    const completeBtn = document.querySelector('.btn-complete')
+    completeBtn.onclick = () => {
+      testimgSystemForm.classList.add('complete')
+      return false
+    }
+
+    const contactForm = document.querySelector('.contact-form')
+    const contactFormBtn = document.querySelector('.contact-form__btn')
+    contactFormBtn.onclick = (e) => {
+      contactForm.classList.add('complete')
+      return false
+    }
+
+    const freeAppForm = document.querySelector('.free-app')
+    const freeAppFormmBtn = document.querySelector('.free-app__btn')
+    freeAppFormmBtn.onclick = (e) => {
+      freeAppForm.classList.add('complete')
+      return false
+    }
+
+    const popupMenu = document.querySelector('.menu-popup')
+    const btnClosePopupMenu = document.querySelector('.menu-popup__btn-close')
+    document.addEventListener('click', (e) => {
+      if (e.target.closest('.header__menu')) {
+        popupMenu.classList.toggle('active')
+        return
+      }
+      if (!e.target.closest('.menu-popup')) {
+          popupMenu.classList.remove('active')
+          return
+        }
+    })
+    btnClosePopupMenu.onclick = (e) => {
+      e.stopPropagation()
+      popupMenu.classList.remove('active')
+    }
+
+    // const controller = new ScrollMagic.Controller({loglevel: 3})
+    // var scene = new ScrollMagic.Scene({triggerElement: ".system-options", duration: 500, loglevel: 3})
+		// 				.setPin(".system-options")
+    //         .setClassToggle(".round-item", "green")
+		// 				.addIndicators() // add indicators (requires plugin)
+		// 				.addTo(controller);
   </script>
 </body>
 </html>
