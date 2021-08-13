@@ -4,10 +4,23 @@
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     height: 90px;
-    width: 95%;
-    max-width: 1200px;
+    position: fixed;
+    background-color: $white;
+    z-index: 10;
+    width: 100vw;
+    transition: all 0.5s;
+    .logo-blue {
+        display: none;
+    }
+    &-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 95%;
+        max-width: 1200px;
+    }
     &__navigation {
         ul {
             display: flex;
@@ -61,12 +74,50 @@
             }
         }
     }
+    &.header_blue {
+        background-color: $blue2;
+        .logo-blue {
+            display: block;
+        }
+        .logo-white {
+            display: none;
+        }
+        a {
+            color: $white;
+        }
+        .contacts-tg {
+            path {
+                &:first-child {
+                    fill: $white;
+                }
+                &:last-child {
+                    fill: $blue2;
+                }
+            }
+        }
+        .contacts-whatsapp {
+            path {
+                &:first-child {
+                    fill: $white;
+                }
+                &:last-child {
+                    fill: #5ACF5E;
+                }
+            }
+        }
+        .header__menu {
+            rect {
+                fill: $white;
+            }
+        }
+    }
 }
 
 .main-baner {
     width: 95%;
     max-width: 1200px;
     height: 668px;
+    padding-top: 90px;
     margin-top: 100px;
     font-family: 'Gilroy';
     background-image: url(../assets/images/Illustartion.png);
@@ -1084,10 +1135,12 @@
         }
     }
     .header {
-        max-width: 768px;
-        height: 5rem;
-        width: 100%;
-        padding: 0 20px;
+        &-wrapper {
+            max-width: 768px;
+            height: 5rem;
+            width: 100%;
+            padding: 0 20px;
+        }
         &__navigation {
             display: none;
         }
@@ -1104,7 +1157,7 @@
             a {
                 display: flex;
                 align-items: center;
-                img {
+                svg {
                     width: 28px;
                     height: 28px;
                 }
@@ -1120,7 +1173,7 @@
     .main-baner {
         width: 100%;
         max-width: 768px;
-        padding: 0 38px; 
+        padding: 50px 38px 0; 
         margin-top: 88px;
         &__title {
             width: 523px;
@@ -1686,10 +1739,11 @@
     }
     .header {
         height: 52px;
-        padding: 0 10px;
-        width: 100%;
-        max-width: 320px;
-
+        &-wrapper {
+            padding: 0 10px;
+            width: 100%;
+            max-width: 320px;
+        }
         &__logo {
             img {
                 width: 113px;
@@ -1732,7 +1786,7 @@
     .main-baner {
         width: 100%;
         max-width: 320px;
-        padding: 0 13px; 
+        padding: 52px 13px 0; 
         margin-top: 34px;
         height: auto;
         background-image: none;

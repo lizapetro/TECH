@@ -14,54 +14,63 @@
 <body>
   <!-- HEADER -->
   <header class='header'>
-    <div class='header__logo'>
-      <img src="./assets/icons/icon-logo.svg" alt="logo">
-    </div>
-    <nav class='header__navigation'>
-      <ul>
-        <li class='main-text-1'>
-          <a href="#app">Приложение</a>
+    <div class="header-wrapper">
+      <div class='header__logo'>
+        <img class="logo-white" src="./assets/icons/icon-logo.svg" alt="logo">
+        <img class="logo-blue" src="./assets/icons/icon-logo__blue.svg" alt="logo">
+      </div>
+      <nav class='header__navigation'>
+        <ul>
+          <li class='main-text-1'>
+            <a href="#app">Приложение</a>
+          </li>
+          <li class='main-text-1'>
+            <a href="#admin-panel">Админка</a>
+          </li>
+          <li class='main-text-1'>
+            <a href="#how-it-work">Как это работает</a>
+          </li>
+          <li class='main-text-1'>
+            <a href='#our-contacts'>Контакты</a>
         </li>
-        <li class='main-text-1'>
-          <a href="#admin-panel">Админка</a>
-        </li>
-        <li class='main-text-1'>
-          <a href="#how-it-work">Как это работает</a>
-        </li>
-        <li class='main-text-1'>
-          <a href='#our-contacts'>Контакты</a>
-      </li>
-      </ul>
-    </nav>
-    <div class='header__contacts'>
-      <a href="tel:+7 (812) 241 12 73" class='phone main-text-1 main-text-1_tablet'>
-        +7 (812) 241 12 73
-      </a>
-      <a class='contacts-tg' href="https://t.me/simple_office">
-        <img src="./assets/icons/telegram-icon.svg" alt="telegram">
-      </a>
-      <a href="https://wa.me/qr/HPYGOBEOKFK7B1">
-        <img src="./assets/icons/whatsapp-icon.svg" alt="whatsapp">
-      </a>
-      <div class="header__menu">
-        <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="28" height="2" fill="#66D1FC"/>
-          <rect y="12" width="28" height="2" fill="#66D1FC"/>
-          <rect y="23" width="28" height="2" fill="#66D1FC"/>
-        </svg>
-        <div class="menu-popup">
-          <div class="menu-popup__btn-close">
-            <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1.61621 25.75L26.4697 1.10352" stroke="#66D1FC" stroke-width="2"/>
-              <path d="M26.4697 26.1035L1.39335 1.20584" stroke="#66D1FC" stroke-width="2"/>
-            </svg>       
-          </div>
-          <a href="#app" class="main-text-1_tablet">Приложение</a>
-          <a href="#admin-panel" class="main-text-1_tablet"> Админка</a>
-          <a href="#how-it-work" class="main-text-1_tablet">Как это работает</a>
-          <a href="#our-contacts" class="main-text-1_tablet">Контакты</a>
-          <a href="tel:+7 (812) 241 12 73" class="main-text-1_tablet">+7 (812) 241 12 73</a>      
-        </div> 
+        </ul>
+      </nav>
+      <div class='header__contacts'>
+        <a href="tel:+7 (812) 241 12 73" class='phone main-text-1 main-text-1_tablet'>
+          +7 (812) 241 12 73
+        </a>
+        <a class='contacts-tg' href="https://t.me/simple_office">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.6967 33.4829C7.02758 32.329 0.93533 24.3659 2.08923 15.6968C3.24312 7.02775 11.2062 0.935498 19.8753 2.08939C28.5444 3.24329 34.6366 11.2064 33.4827 19.8755C32.3288 28.5445 24.3657 34.6368 15.6967 33.4829Z" fill="#66D1FC"/>
+            <path d="M26.345 18.5797L11.9874 10.73C11.3187 10.3827 10.6487 10.7262 10.7349 11.8187L10.7338 11.8172L11.6947 24.3003C11.7711 25.1864 12.2547 25.4638 13.0242 25.1535L17.3334 22.7837L18.9834 24.8591C19.1649 25.0962 19.3179 25.2963 19.7234 25.3503L19.9764 21.3197L13.5781 13.7813C13.2986 13.4605 13.7067 13.3551 14.0871 13.6879L22.3216 20.5429L26.3569 19.85C27.2335 19.6951 27.3283 19.1233 26.345 18.5797Z" fill="white"/>
+          </svg>
+        </a>
+        <a class='contacts-whatsapp'href="https://wa.me/qr/HPYGOBEOKFK7B1">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.2238 2.08982L20.2161 2.08879C11.6868 0.953494 3.81367 7.07026 2.66142 15.727C2.20438 19.1607 2.87135 22.4884 4.38177 25.3193L1.67774 30.894L7.88046 29.7567C10.1077 31.7265 12.8992 33.0645 16.0452 33.4833C24.5746 34.6186 32.4479 28.4999 33.5999 19.8451C34.7519 11.1903 28.7532 3.22512 20.2238 2.08982Z" fill="#5ACF5E"/>
+            <path d="M26.7029 23.8875C26.1967 24.7853 24.5838 25.3711 23.3502 25.4407C22.5066 25.486 21.4151 25.4665 17.9728 23.6588C13.5695 21.3478 11.1419 16.7938 10.9455 16.4931C10.7589 16.1938 9.36802 14.0429 9.63392 12.0452C9.89983 10.0475 11.1772 9.22756 11.6955 8.87151C12.1211 8.57928 12.77 8.50627 13.3725 8.58646C13.5674 8.61241 13.7415 8.64443 13.8981 8.67236C14.3585 8.75135 14.5875 8.80664 14.8068 9.49285C15.0791 10.3526 15.7386 12.4735 15.8215 12.6935C15.9064 12.9137 15.9816 13.2071 15.7881 13.4559C15.6034 13.7146 15.457 13.8209 15.1932 14.0266C14.9294 14.2324 14.6848 14.384 14.4186 14.6071C14.1766 14.7998 13.9048 15.0045 14.1182 15.4491C14.3327 15.885 15.0804 17.3428 16.3002 18.5961C17.8743 20.2135 19.241 20.8453 19.7259 21.1011C20.0874 21.2909 20.5446 21.3181 20.857 21.094C21.2541 20.8051 21.7634 20.3062 22.2793 19.817C22.6467 19.4656 23.0509 19.4699 23.4498 19.6646C23.8577 19.8517 25.9773 21.1345 26.4129 21.3997C26.8482 21.6666 27.1404 21.8047 27.2297 21.9919C27.3171 22.1788 27.2094 22.988 26.7029 23.8875Z" fill="white"/>
+          </svg>
+        </a>
+        <div class="header__menu">
+          <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="28" height="2" fill="#66D1FC"/>
+            <rect y="12" width="28" height="2" fill="#66D1FC"/>
+            <rect y="23" width="28" height="2" fill="#66D1FC"/>
+          </svg>
+          <div class="menu-popup">
+            <div class="menu-popup__btn-close">
+              <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.61621 25.75L26.4697 1.10352" stroke="#66D1FC" stroke-width="2"/>
+                <path d="M26.4697 26.1035L1.39335 1.20584" stroke="#66D1FC" stroke-width="2"/>
+              </svg>       
+            </div>
+            <a href="#app" class="main-text-1_tablet">Приложение</a>
+            <a href="#admin-panel" class="main-text-1_tablet"> Админка</a>
+            <a href="#how-it-work" class="main-text-1_tablet">Как это работает</a>
+            <a href="#our-contacts" class="main-text-1_tablet">Контакты</a>
+            <a href="tel:+7 (812) 241 12 73" class="main-text-1_tablet">+7 (812) 241 12 73</a>      
+          </div> 
+        </div>
       </div>
     </div>
   </header>
@@ -707,12 +716,23 @@
       popupMenu.classList.remove('active')
     }
 
+    const header = document.querySelector('.header')
+    document.addEventListener('scroll', () => {
+      if (window.scrollY > 0 && !header.classList.contains('header_blue')) {
+        header.classList.add('header_blue')
+      }
+      if (window.scrollY === 0 && header.classList.contains('header_blue')) {
+        header.classList.remove('header_blue')
+      }
+    })
+
     // const controller = new ScrollMagic.Controller({loglevel: 3})
     // var scene = new ScrollMagic.Scene({triggerElement: ".system-options", duration: 500, loglevel: 3})
 		// 				.setPin(".system-options")
     //         .setClassToggle(".round-item", "green")
 		// 				.addIndicators() // add indicators (requires plugin)
 		// 				.addTo(controller);
+
   </script>
 </body>
 </html>

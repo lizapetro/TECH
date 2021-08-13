@@ -413,10 +413,32 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90px;
+  position: fixed;
+  background-color: #FFFFFF;
+  z-index: 10;
+  width: 100vw;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.header .logo-blue {
+  display: none;
+}
+
+.header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 90px;
   width: 95%;
   max-width: 1200px;
 }
@@ -494,10 +516,47 @@ a:hover {
   visibility: visible;
 }
 
+.header.header_blue {
+  background-color: #66D1FC;
+}
+
+.header.header_blue .logo-blue {
+  display: block;
+}
+
+.header.header_blue .logo-white {
+  display: none;
+}
+
+.header.header_blue a {
+  color: #FFFFFF;
+}
+
+.header.header_blue .contacts-tg path:first-child {
+  fill: #FFFFFF;
+}
+
+.header.header_blue .contacts-tg path:last-child {
+  fill: #66D1FC;
+}
+
+.header.header_blue .contacts-whatsapp path:first-child {
+  fill: #FFFFFF;
+}
+
+.header.header_blue .contacts-whatsapp path:last-child {
+  fill: #5ACF5E;
+}
+
+.header.header_blue .header__menu rect {
+  fill: #FFFFFF;
+}
+
 .main-baner {
   width: 95%;
   max-width: 1200px;
   height: 668px;
+  padding-top: 90px;
   margin-top: 100px;
   font-family: 'Gilroy';
   background-image: url(../assets/images/Illustartion.png);
@@ -1859,7 +1918,7 @@ a:hover {
   .complete h1 {
     margin-bottom: 14px;
   }
-  .header {
+  .header-wrapper {
     max-width: 768px;
     height: 5rem;
     width: 100%;
@@ -1883,7 +1942,7 @@ a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  .header__contacts a img {
+  .header__contacts a svg {
     width: 28px;
     height: 28px;
   }
@@ -1896,7 +1955,7 @@ a:hover {
   .main-baner {
     width: 100%;
     max-width: 768px;
-    padding: 0 38px;
+    padding: 50px 38px 0;
     margin-top: 88px;
   }
   .main-baner__title {
@@ -2448,6 +2507,8 @@ a:hover {
   }
   .header {
     height: 52px;
+  }
+  .header-wrapper {
     padding: 0 10px;
     width: 100%;
     max-width: 320px;
@@ -2490,7 +2551,7 @@ a:hover {
   .main-baner {
     width: 100%;
     max-width: 320px;
-    padding: 0 13px;
+    padding: 52px 13px 0;
     margin-top: 34px;
     height: auto;
     background-image: none;
