@@ -770,7 +770,6 @@
       htmlElement.style.overflowY = 'auto'
     }
 
-<<<<<<< HEAD
     const header = document.querySelector('.header')
     document.addEventListener('scroll', () => {
       if (window.scrollY > 0 && !header.classList.contains('header_blue')) {
@@ -781,30 +780,22 @@
       }
     })
 
-    // const controller = new ScrollMagic.Controller({loglevel: 3})
-    // var scene = new ScrollMagic.Scene({triggerElement: ".system-options", duration: 500, loglevel: 3})
-		// 				.setPin(".system-options")
-    //         .setClassToggle(".round-item", "green")
-		// 				.addIndicators() // add indicators (requires plugin)
-		// 				.addTo(controller);
-
-=======
     if (!(window.innerWidth < 768)) {
       const controller = new ScrollMagic.Controller()
       const delta = window.innerWidth < 768 ? 200 : 250
 
-      var tweenForRound = TweenMax.to(".round-item", 0.5, {transform: 'translateX(0)'});
-      var tweenForFirstText = TweenMax.to(".first-text", 5, {opacity: 1});
-      var tweenForRect = TweenMax.to(".rect-item", 0.5, {transform: 'translateX(0)'});
-      var tweenForSecondText = TweenMax.to(".second-text", 0.5, {opacity: 1});
+      const tweenForRound = TweenMax.to(".round-item", 0.5, {transform: 'translateX(0)'});
+      const tweenForFirstText = TweenMax.to(".first-text", 5, {opacity: 1});
+      const tweenForRect = TweenMax.to(".rect-item", 0.5, {transform: 'translateX(0)'});
+      const tweenForSecondText = TweenMax.to(".second-text", 0.5, {opacity: 1});
 
-      var scene1 = new ScrollMagic.Scene({triggerElement: ".system-options", duration: delta})
+      const scene1 = new ScrollMagic.Scene({triggerElement: ".system-options", duration: delta})
         .setTween(tweenForRound)
-      var scene2 = new ScrollMagic.Scene({triggerElement: ".system-options", offset: delta, duration: delta * 2})
+      const scene2 = new ScrollMagic.Scene({triggerElement: ".system-options", offset: delta, duration: delta * 2})
       .setTween(tweenForFirstText)
-      var scene3 = new ScrollMagic.Scene({triggerElement: ".system-options", offset: delta * 2, duration: delta})
+      const scene3 = new ScrollMagic.Scene({triggerElement: ".system-options", offset: delta * 2, duration: delta})
       .setTween(tweenForRect)
-      var scene4 = new ScrollMagic.Scene({triggerElement: ".system-options", offset: delta * 3,duration: delta})
+      const scene4 = new ScrollMagic.Scene({triggerElement: ".system-options", offset: delta * 3,duration: delta})
       .setTween(tweenForSecondText)
 
       controller.addScene([
@@ -814,7 +805,6 @@
         scene4
       ]);
     }
->>>>>>> 19edbca57a91e8ba5fa444f48404d55954ce8c38
   </script>
 </body>
 </html>
