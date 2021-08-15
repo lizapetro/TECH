@@ -88,8 +88,12 @@ input {
     line-height: 180%;
     letter-spacing: -0.01em;
     font-family: 'Active Grotesk Corp';
+    outline-color: $blue2;  
     &::placeholder {
         color: $gray-dark;
+    }
+    &.error {
+        background-color: rgba(243, 76, 56, 0.1);
     }
 }
 
@@ -273,7 +277,7 @@ a {
     }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 767px) {
     .header-1_mobile {
         font-family: 'Gilroy' !important;
         font-weight: 400 !important;

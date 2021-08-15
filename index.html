@@ -69,16 +69,16 @@
   <!-- BANER -->
   <section class="main-baner">
     <div class="main-baner__info">
-      <span class="main-baner__title header-1_tablet header-2_mobile">
+      <span class="main-baner__title header-1_tablet header-1_mobile">
         Система бронирования 
         <span class="font_pips header-2_tablet header-2_mobile">рабочих </span>
-        мест. 
+        мест
       </span>
       <span class="main-baner__description main-text-1 main-text-1_tablet main-text-1_mobile">
         Cистема управления офисным пространством для компаний, которые ценят своих сотрудников
       </span>
       <button class="main-baner__button">
-        <span class='main-text-1 main-text-1_tablet main-text-1_mobile'>Попробовать</span>
+        <a href="#free-app" class='main-text-1 main-text-1_tablet main-text-1_mobile'>Попробовать</a>
       </button>
     </div>
   </section>
@@ -100,7 +100,7 @@
       </span>
     </div>
     <h1 class="advantages header-3_tablet header-3_mobile">
-      Ты сам выбираешь <span class="font_pips header-4_tablet header-4_mobile">где</span>, <span class="font_pips header-4_tablet header-4_mobile">когда</span>  и <span class="font_pips header-4_tablet header-4_mobile">с кем</span> работать. 
+      Ты сам выбираешь <span class="font_pips header-4_tablet header-4_mobile">где</span>, <span class="font_pips header-4_tablet header-4_mobile">когда</span>  и <span class="font_pips header-4_tablet header-4_mobile">с кем</span> работать
     </h1>
     <div class="mobile-app-swiper__wrapper">
       <div class="swiper-container mobile-app-swiper">
@@ -185,10 +185,8 @@
           </div>
         </div>
         <div class="swiper-button-next">
-          <img src="./assets/icons/arrow.svg" alt="">
         </div>
         <div class="swiper-button-prev">
-          <img src="./assets/icons/arrow.svg" alt="">
         </div>
       </div>
     </div>
@@ -199,7 +197,7 @@
   <section id="admin-panel" class="admin-panel feature">
     <div class="title">
       <span class="main-text-1 main-text-1_tablet additional-text-1_mobile">
-        Адиминка
+        Админка
       </span>
     </div>
     <h1 class="advantages header-3_tablet header-3_mobile">
@@ -208,39 +206,45 @@
     <div class="swiper-container admin-panel-swiper">
       <div class="swiper-wrapper">
 
-        <div class="swiper-slide admin-panel__card">
+        <div class="swiper-slide admin-panel__card control">
           <span class="admin-panel__title main-text-3 header-5_tablet header-5_mobile">
             Управляй <span class="font-color_blue">картой офиса:</span> <br> интерактивная карта для поиска мест
           </span>
           <span class="admin-panel__description main-text-1 main-text-1_tablet main-text-1_mobile">
-            расстановка интерактивных маркеров <br> и точек интереса на карте
+            Расстановка интерактивных маркеров <br> и точек интереса на карте
           </span>
-          <img src="./assets/images/admin-panel.png" alt="">
+          <div class="admin-panel__img-wrapper">
+            <img src="./assets/images/admin-panel.png" alt="">
+          </div>
         </div>
 
-        <div class="swiper-slide admin-panel__card">
+        <div class="swiper-slide admin-panel__card send">
           <span class="admin-panel__title main-text-3 header-5_tablet header-5_mobile">
             Отправляй корпоративные <br> <span class="font-color_blue">уведомления</span>
           </span>
           <span class="admin-panel__description main-text-1 main-text-1_tablet main-text-1_mobile">
             Групповая и персональная рассылка уведомлений,<br> сообщений и новостей сотрудникам 
           </span>
-          <img src="./assets/images/admin-panel-analytics.png" alt="">
+          <div class="admin-panel__img-wrapper">
+            <img src="./assets/images/admin-panel-analytics.png" alt="">
+          </div>
         </div>
 
-        <div class="swiper-slide admin-panel__card">
+        <div class="swiper-slide admin-panel__card analyze">
           <span class="admin-panel__title main-text-3 header-5_tablet header-5_mobile">
             <span class="font-color_blue">Анализируй</span> эффективность<br> использования офисного пространства 
           </span>
           <span class="admin-panel__description main-text-1 main-text-1_tablet main-text-1_mobile">
-            Посещаемость сотрудниками рабочих мест, cредний процент<br> утилизации, количество мест доступных для бронирования. 
+            Посещаемость сотрудниками рабочих мест, cредний процент<br> утилизации, количество мест доступных для бронирования
           </span>
-          <img src="./assets/images/admin-panel-notification.png" alt="">
+          <div class="admin-panel__img-wrapper">
+            <img src="./assets/images/admin-panel-notification.png" alt="">
+          </div>
         </div>
 
       </div>
-      <div class="swiper-button-next"><img src="./assets/icons/arrow.svg" alt=""></div>
-      <div class="swiper-button-prev"><img src="./assets/icons/arrow.svg" alt=""></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
   </section>
 
@@ -252,7 +256,8 @@
       </span>
     </div>
     <h1 class="advantages header-3_tablet header-4_mobile">
-      Наглядная <span class="font_pips">информация</span> о статусе переговорной комнаты
+      Наглядная 
+      <span class="font_pips">информация</span> о статусе переговорной комнаты
     </h1>
     <div class="booking-panel__opportunity">
       <div class="opportunity-item">
@@ -275,7 +280,7 @@
       </div>
     </div>
     <div class="iframe-wrapper">
-      <iframe width="640" height="450" src="https://www.youtube.com/embed/YYIaQOL4cew?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="640" height="450" src="https://www.youtube.com/embed/A2darw6akt0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <div class="iframe-wrapper__helper"></div>
     </div>
   </section>
@@ -291,15 +296,16 @@
         <div class="instruction__item">
           <h3 class="header-5_tablet header-5_mobile">01. Внедряй</h3>
           <span class="main-text-2 main-text-2_tablet main-text-2_mobile">Легкое внедрение и интуитивно понятный интерфейс на страже ваших нервов и бюджетов.</span>
-          <span class="main-text-1 additional-text-1_tablet additional-text-1_mobile">Ни один сотрудник бухгалтерии не пострадал во время UX тестирования</span>
+          <span class="main-text-1 additional-text-1_tablet additional-text-1_mobile">Ни один сотрудник бухгалтерии не пострадал во время UX тестирования.</span>
         </div>
         <img src="./assets/images/implement.png" alt="">
       </div>
       <div class="how-it-work__instruction">
         <div class="instruction__item">
           <h3 class="header-5_tablet header-5_mobile">02. Анализируй</h3>
-          <span class="main-text-2 main-text-2_tablet main-text-2_mobile">Актуальная информация об использовании рабочих мест, пространств, графиков работы и расположении сотрудников в офисе.</span>
-          <span class="main-text-1 additional-text-1_tablet additional-text-1_mobile">В любой момент времени вы владеете актуальной информацией и контролируете ситуацию</span>
+          <span class="main-text-2 main-text-2_tablet main-text-2_mobile">Актуальная информация об использовании рабочих мест, пространств, графиков работы и расположении сотрудников 
+            в офисе.</span>
+          <span class="main-text-1 additional-text-1_tablet additional-text-1_mobile">В любой момент времени вы владеете актуальной информацией и контролируете ситуацию.</span>
         </div>
         <img src="./assets/images/analyze.png" alt="">
       </div>
@@ -307,7 +313,8 @@
         <div class="instruction__item">
           <h3 class="header-5_tablet header-5_mobile">03. Управляй</h3>
           <span class="main-text-2 main-text-2_tablet main-text-2_mobile">Управляй использованием рабочих мест, переговорных комнат и других помещений.</span>
-          <span class="main-text-1 additional-text-1_tablet additional-text-1_mobile">Теперь можно организовать работу сотрудников с гибким графиком, инициировать коллективную работу и не занимать очередь в переговорную</span>
+          <span class="main-text-1 additional-text-1_tablet additional-text-1_mobile">Теперь можно организовать работу сотрудников с гибким графиком, инициировать коллективную работу 
+            и не занимать очередь в переговорную.</span>
         </div>
         <img src="./assets/images/control.png" alt="">
       </div>
@@ -317,7 +324,7 @@
 
   <!-- SYSTEM OPTIONS -->
 
-  <!-- <section class="system-options feature">
+  <section class="system-options feature">
     <div class="title">
       <span class="main-text-1 main-text-1_tablet additional-text-1_mobile">
         Варианты системы
@@ -326,35 +333,40 @@
     <div class="system-options__wrapper">
       <div class="system-options__item">
         <div class="round-item">
-
         </div>
-        <span class="h7 header-3_tablet header-1_mobile">
-          SAAS
-        </span>
-        <span class="main-text-3 header-6_tablet header-5_mobile">
-          Легкий облачный сервис
-        </span>
-        <span class="main-text-1 main-text-1_tablet main-text-1_mobile">
-          Зарегистрируйся и скачай <br> приложение SIMPLE OFFICE
-        </span>
+        <div class="first-text">
+          <span class="h7 header-3_tablet header-1_mobile">
+            SAAS
+          </span>
+          <span class="main-text-3 header-6_tablet header-5_mobile">
+            Легкий облачный сервис
+          </span>
+          <span class="main-text-1 main-text-1_tablet main-text-1_mobile">
+            Зарегистрируйся и скачай <br> приложение SIMPLE OFFICE
+          </span>
+        </div>
       </div>
       <div class="system-options__item">
-        <span class="h7 header-3_tablet header-1_mobile">
-          ON-PREMISE
-        </span>
-        <span class="main-text-3 header-6_tablet header-5_mobile">
-          Персональная коробочная версия
-        </span>
-        <span class="main-text-1 main-text-1_tablet main-text-1_mobile">
-          Система устанавливается на<br> корпоративном сервере 
-        </span>
+        <div class="second-text">
+          <span class="h7 header-3_tablet header-1_mobile">
+            ON-PREMISE
+          </span>
+          <span class="main-text-3 header-6_tablet header-5_mobile">
+            Персональная коробочная версия
+          </span>
+          <span class="main-text-1 main-text-1_tablet main-text-1_mobile">
+            Система устанавливается на<br> корпоративном сервере 
+          </span>
+        </div>
+        <div class="rect-item">
+        </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <!-- FREE APP FORM -->
 
-  <section class="free-app">
+  <section id='free-app' class="free-app">
     <div class="free-app__offer-info">
       <div class="free-app__offer-info-wrapper">
         <span class="main-text-1 main-text-1_tablet main-text-1_mobile">
@@ -367,17 +379,20 @@
       <form>
         <input 
           placeholder="Имя"
+          required
         >
         <input 
           placeholder="Компания"
+          required
         >
         <input 
           placeholder="Телефон"
         >      
         <input 
           placeholder="E-mail"
+          required
         >
-        <button class="free-app__btn main-text-1 main-text-1_tablet main-text-1_mobile">
+        <button type='submit'class="free-app__btn main-text-1 main-text-1_tablet main-text-1_mobile">
           Отправить заявку
         </button>
       </form>
@@ -432,9 +447,11 @@
       <form action="">
         <input
           placeholder="Имя"
+          required
         >
         <input
           placeholder="E-mail"
+          required
         >
         <button class="contact-form__btn main-text-1 main-text-1_tablet main-text-1_mobile">
           Отправить
@@ -492,14 +509,14 @@
       <h2 class="header-5_tablet header-5_mobile">Хочешь протестировать сиcтему?</h2>
       <form action="">
         <div class="test-system-form__row">
-          <input placeholder='Имя' type="text">
+          <input placeholder='Имя' type="text" required>
           <input placeholder='Телефон' type="text">
         </div>
         <div class="test-system-form__row">
-          <input placeholder='E-mail' type="text">
-          <input placeholder='Компания' type="text">
+          <input placeholder='E-mail' type="text" required>
+          <input placeholder='Компания' type="text" required>
         </div>
-        <button class="main-text-1 main-text-1_tablet main-text-1_mobile btn-complete">Отправить заявку</button>
+        <button type='sumbit'class="main-text-1 main-text-1_tablet main-text-1_mobile btn-complete">Отправить заявку</button>
       </form>
     </div>
     <div class="test-system-form__wrapper request-complete">
@@ -527,13 +544,14 @@
     <div class="reviews-swiper__wrapper">
       <div class="swiper-container reviews-swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide review__item">
+          <div class="swiper-slide review__item review-NBC">
             <div class="review-tags">
               <span class="font_pips additional-text-2_tablet additional-text-3_mobile">#офисlife</span>
               <span class="font_pips additional-text-2_tablet additional-text-3_mobile">#flexoffice</span>
               <span class="font_pips additional-text-2_tablet additional-text-3_mobile">#meetingroom</span>
             </div>
-            <h2 class="header-5_tablet header-5_mobile">Полезный сервис. Просто внедряется в бизнес-процессы компании и не вызывает отторжения у пользователей.</h2>
+            <h2 class="header-5_tablet header-5_mobile"><span>Полезный сервис.</span> Просто внедряется 
+              в бизнес-процессы компании и не вызывает отторжения у пользователей.</h2>
             <div class="review-autor">
               <img src="./assets/images/photo-autor-1.png" alt="" class="review-autor__photo">
               <span class="main-text-3 header-6_tablet header-5_mobile">Смирнова Марина</span>
@@ -541,7 +559,7 @@
               <span class="main-text-1 autor__company main-text-1_tablet additional-text-1_mobile">NBCom Group</span>
             </div>
           </div>
-          <div class="swiper-slide review__item">
+          <div class="swiper-slide review__item review-avito">
             <div class="review-tags">
               <span class="font_pips additional-text-2_tablet additional-text-3_mobile">#гибкий офис</span>
               <span class="font_pips additional-text-2_tablet additional-text-3_mobile">#supporteam</span>
@@ -555,7 +573,7 @@
               <span class="main-text-1 autor__company main-text-1_tablet additional-text-1_mobile">АВИТО</span>
             </div>
           </div>
-          <div class="swiper-slide review__item">
+          <div class="swiper-slide review__item review-proptech">
             <div class="review-tags">
               <span class="font_pips additional-text-2_tablet additional-text-3_mobile">#proptech</span>
               <span class="font_pips additional-text-2_tablet additional-text-3_mobile">#startup</span>
@@ -571,10 +589,8 @@
           </div>
         </div>
         <div class="swiper-button-next">
-          <img src="./assets/icons/arrow.svg" alt="">
         </div>
         <div class="swiper-button-prev">
-          <img src="./assets/icons/arrow.svg" alt="">
         </div>
       </div>
     </div>
@@ -601,6 +617,7 @@
           </a>
         </div>
       </div>
+      <div class="illustration"></div>
     </div>  
   </section>
 
@@ -645,7 +662,9 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
   <script>
     const mobileAppSwiper  = new Swiper(".mobile-app-swiper", {
       navigation: {
@@ -669,24 +688,44 @@
       loop: true,
     });
 
+    const checkRequiredFields = (form) => {
+      const fields = form.querySelectorAll('input')
+      let haveEmptyField = false
+      fields.forEach(field => {
+        if (field.required && !field.value) {
+          field.classList.add('error')
+          haveEmptyField = true
+        } else {
+          field.classList.remove('error')
+        }
+      })
+      return haveEmptyField
+    }
+
     const testimgSystemForm = document.querySelector('.test-system-form')
     const completeBtn = document.querySelector('.btn-complete')
     completeBtn.onclick = () => {
-      testimgSystemForm.classList.add('complete')
+      if (!checkRequiredFields(testimgSystemForm)) {
+        testimgSystemForm.classList.add('complete')
+      }
       return false
     }
 
     const contactForm = document.querySelector('.contact-form')
     const contactFormBtn = document.querySelector('.contact-form__btn')
     contactFormBtn.onclick = (e) => {
-      contactForm.classList.add('complete')
+      if (!checkRequiredFields(contactForm)) {
+        contactForm.classList.add('complete')
+      }
       return false
     }
 
     const freeAppForm = document.querySelector('.free-app')
     const freeAppFormmBtn = document.querySelector('.free-app__btn')
     freeAppFormmBtn.onclick = (e) => {
-      freeAppForm.classList.add('complete')
+      if (!checkRequiredFields(freeAppForm)) {
+        freeAppForm.classList.add('complete')
+      }
       return false
     }
 
@@ -707,12 +746,29 @@
       popupMenu.classList.remove('active')
     }
 
-    // const controller = new ScrollMagic.Controller({loglevel: 3})
-    // var scene = new ScrollMagic.Scene({triggerElement: ".system-options", duration: 500, loglevel: 3})
-		// 				.setPin(".system-options")
-    //         .setClassToggle(".round-item", "green")
-		// 				.addIndicators() // add indicators (requires plugin)
-		// 				.addTo(controller);
+    const controller = new ScrollMagic.Controller()
+    const delta = window.innerWidth < 768 ? 200 : 250
+
+    var tweenForRound = TweenMax.to(".round-item", 0.5, {transform: 'translateX(0)'});
+    var tweenForFirstText = TweenMax.to(".first-text", 5, {opacity: 1});
+    var tweenForRect = TweenMax.to(".rect-item", 0.5, {transform: 'translateX(0)'});
+    var tweenForSecondText = TweenMax.to(".second-text", 0.5, {opacity: 1});
+
+    var scene1 = new ScrollMagic.Scene({triggerElement: ".system-options", duration: delta})
+      .setTween(tweenForRound)
+    var scene2 = new ScrollMagic.Scene({triggerElement: ".system-options", offset: delta, duration: delta * 2})
+    .setTween(tweenForFirstText)
+    var scene3 = new ScrollMagic.Scene({triggerElement: ".system-options", offset: delta * 2, duration: delta})
+    .setTween(tweenForRect)
+    var scene4 = new ScrollMagic.Scene({triggerElement: ".system-options", offset: delta * 3,duration: delta})
+    .setTween(tweenForSecondText)
+
+    controller.addScene([
+      scene1,
+      scene2,
+      scene3,
+      scene4
+    ]);
   </script>
 </body>
 </html>
