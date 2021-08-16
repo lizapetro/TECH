@@ -477,6 +477,18 @@ a:hover {
   visibility: hidden;
 }
 
+.header__menu .menu-popup::before {
+  content: '';
+  background-repeat: no-repeat;
+  background-image: url(../assets/icons/cloud__mobile-app.svg);
+  background-size: 100%;
+  width: 126px;
+  height: 123px;
+  position: absolute;
+  right: 4px;
+  bottom: 12px;
+}
+
 .header__menu .menu-popup a {
   text-decoration: none;
 }
