@@ -730,6 +730,9 @@
     }
 
     const popupMenu = document.querySelector('.menu-popup')
+    if (window.innerWidth < 768) {
+      popupMenu.style.height = window.innerHeight;
+    }
     const btnClosePopupMenu = document.querySelector('.menu-popup__btn-close')
     document.addEventListener('click', (e) => {
       if (e.target.closest('.header__menu')) {
