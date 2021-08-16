@@ -469,7 +469,7 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  right: 0;
+  right: -15px;
   padding-left: 120px;
   z-index: 1;
   border-radius: 15px;
@@ -492,7 +492,7 @@ a:hover {
 .header__menu .menu-popup__btn-close {
   position: absolute;
   top: 16px;
-  right: 20px;
+  right: 13px;
 }
 
 .header__menu .menu-popup.active {
@@ -820,10 +820,12 @@ a:hover {
 }
 
 .admin-panel::before {
-  background-image: url(../assets/icons/line__admin-panel.svg);
+  background-image: url(../assets/icons/line__admin-panel.png);
   width: 265.09px;
   height: 254.48px;
   left: 0;
+  -webkit-transform: rotate(-34.21deg);
+          transform: rotate(-34.21deg);
 }
 
 .admin-panel::after {
@@ -946,12 +948,12 @@ a:hover {
   position: absolute;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-image: url(../assets/icons/line__admin-panel.svg);
+  background-image: url(../assets/icons/line__admin-panel.png);
   width: 267.82px;
   height: 316.16px;
-  -webkit-transform: rotate(20deg);
-          transform: rotate(20deg);
-  bottom: calc(100% + 56px);
+  -webkit-transform: rotate(-13.06deg);
+          transform: rotate(-13.06deg);
+  bottom: calc(100% + 46px);
   left: -130px;
 }
 
@@ -1673,9 +1675,10 @@ a:hover {
   position: absolute;
   width: 696px;
   height: 147px;
-  background-image: url("../assets/icons/arrows-white.svg");
+  background-image: url("../assets/icons/arrows-white.png");
   bottom: 0;
   right: 70px;
+  background-size: 100%;
 }
 
 .contact-form form {
@@ -1934,10 +1937,12 @@ a:hover {
   position: absolute;
   width: 182.87px;
   height: 143.53px;
-  background-image: url("../assets/icons/decoration-3.svg");
+  background-image: url("../assets/icons/line__admin-panel.png");
   background-size: 100%;
   left: -60px;
   top: 50px;
+  -webkit-transform: rotate(-34.21deg);
+          transform: rotate(-34.21deg);
 }
 
 .reviews .review__item {
@@ -2128,7 +2133,7 @@ a:hover {
   position: absolute;
   width: 302px;
   height: 197px;
-  background-image: url("../assets/icons/decoratioin-white-2.svg");
+  background-image: url("../assets/icons/decoratioin-white.png");
   background-size: 100%;
   left: 116px;
   top: 45px;
@@ -2950,7 +2955,9 @@ a:hover {
     max-width: 768px;
   }
   .reviews::before {
-    display: none;
+    width: 99px;
+    height: 77px;
+    left: 50px;
   }
   .reviews .review__item {
     padding: 83px 0 130px;
@@ -2964,7 +2971,7 @@ a:hover {
   .reviews .review__item.review-NBC h2 {
     max-width: 510px;
   }
-  .reviews .review__item.review-NBC span {
+  .reviews .review__item.review-NBC .new-line {
     display: block;
   }
   .reviews .review-autor {
@@ -3143,6 +3150,7 @@ a:hover {
     height: 100vh;
     position: fixed;
     top: 0;
+    right: 0;
     border: 0;
     border-radius: 0;
     padding-left: 0;
@@ -3892,6 +3900,9 @@ a:hover {
   .reviews {
     margin-top: 20px;
     width: 300px;
+  }
+  .reviews::before {
+    display: none;
   }
   .reviews .review-tags .font_pips:not(:last-child) {
     margin-right: 8px;
