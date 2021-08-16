@@ -746,29 +746,31 @@
       popupMenu.classList.remove('active')
     }
 
-    const controller = new ScrollMagic.Controller()
-    const delta = window.innerWidth < 768 ? 200 : 250
+    if (!(window.innerWidth < 768)) {
+      const controller = new ScrollMagic.Controller()
+      const delta = window.innerWidth < 768 ? 200 : 250
 
-    var tweenForRound = TweenMax.to(".round-item", 0.5, {transform: 'translateX(0)'});
-    var tweenForFirstText = TweenMax.to(".first-text", 5, {opacity: 1});
-    var tweenForRect = TweenMax.to(".rect-item", 0.5, {transform: 'translateX(0)'});
-    var tweenForSecondText = TweenMax.to(".second-text", 0.5, {opacity: 1});
+      var tweenForRound = TweenMax.to(".round-item", 0.5, {transform: 'translateX(0)'});
+      var tweenForFirstText = TweenMax.to(".first-text", 5, {opacity: 1});
+      var tweenForRect = TweenMax.to(".rect-item", 0.5, {transform: 'translateX(0)'});
+      var tweenForSecondText = TweenMax.to(".second-text", 0.5, {opacity: 1});
 
-    var scene1 = new ScrollMagic.Scene({triggerElement: ".system-options", duration: delta})
-      .setTween(tweenForRound)
-    var scene2 = new ScrollMagic.Scene({triggerElement: ".system-options", offset: delta, duration: delta * 2})
-    .setTween(tweenForFirstText)
-    var scene3 = new ScrollMagic.Scene({triggerElement: ".system-options", offset: delta * 2, duration: delta})
-    .setTween(tweenForRect)
-    var scene4 = new ScrollMagic.Scene({triggerElement: ".system-options", offset: delta * 3,duration: delta})
-    .setTween(tweenForSecondText)
+      var scene1 = new ScrollMagic.Scene({triggerElement: ".system-options", duration: delta})
+        .setTween(tweenForRound)
+      var scene2 = new ScrollMagic.Scene({triggerElement: ".system-options", offset: delta, duration: delta * 2})
+      .setTween(tweenForFirstText)
+      var scene3 = new ScrollMagic.Scene({triggerElement: ".system-options", offset: delta * 2, duration: delta})
+      .setTween(tweenForRect)
+      var scene4 = new ScrollMagic.Scene({triggerElement: ".system-options", offset: delta * 3,duration: delta})
+      .setTween(tweenForSecondText)
 
-    controller.addScene([
-      scene1,
-      scene2,
-      scene3,
-      scene4
-    ]);
+      controller.addScene([
+        scene1,
+        scene2,
+        scene3,
+        scene4
+      ]);
+    }
   </script>
 </body>
 </html>

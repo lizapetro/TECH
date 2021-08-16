@@ -641,7 +641,7 @@ a:hover {
   width: 447.06px;
   height: 274px;
   position: absolute;
-  background-image: url(../assets/icons/line-group__mobile-app.svg);
+  background-image: url(../assets/icons/line-group__mobile-app.png);
   background-size: 100%;
   background-repeat: no-repeat;
   top: 52px;
@@ -829,7 +829,7 @@ a:hover {
 }
 
 .admin-panel::after {
-  background-image: url(../assets/icons/line-group__mobile-app.svg);
+  background-image: url(../assets/icons/line-group__mobile-app.png);
   width: 447.06px;
   height: 280px;
   -webkit-transform: scale(-1, 1);
@@ -901,11 +901,13 @@ a:hover {
   position: absolute;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-image: url(../assets/icons/line__admin-panel_2.svg);
+  background-image: url(../assets/icons/line__admin-panel_2.png);
   width: 223.07px;
   height: 178.61px;
   right: calc(100% + 26px);
   bottom: -20px;
+  -webkit-transform: matrix(-0.98, 0.2, 0.2, 0.98, 0, 0);
+          transform: matrix(-0.98, 0.2, 0.2, 0.98, 0, 0);
 }
 
 .admin-panel__card.send .admin-panel__img-wrapper {
@@ -918,7 +920,7 @@ a:hover {
   position: absolute;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-image: url(../assets/icons/icon-group__admin-panel.svg);
+  background-image: url(../assets/icons/icon-group__admin-panel.png);
   width: 227.37px;
   height: 211.73px;
   right: -201px;
@@ -931,7 +933,7 @@ a:hover {
   position: absolute;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-image: url(../assets/icons/text-icon__admin-panel.svg);
+  background-image: url(../assets/icons/text-icon__admin-panel.png);
   width: 204px;
   height: 157px;
   left: -100px;
@@ -963,7 +965,7 @@ a:hover {
   position: absolute;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-image: url(../assets/icons/line-group__mobile-app.svg);
+  background-image: url(../assets/icons/line-group__mobile-app.png);
   width: 415.45px;
   height: 398.83px;
   right: -239px;
@@ -2761,14 +2763,14 @@ a:hover {
   }
   .advantages::before {
     content: '';
-    background-image: url(../assets/icons/line-group__mobile-app.svg);
+    background-image: url(../assets/icons/line-group__mobile-app.png);
     width: 314px;
     height: 248px;
     background-repeat: no-repeat;
     background-size: 100%;
     position: absolute;
     bottom: 0;
-    right: -60px;
+    right: 0;
   }
   .advantages .title::before {
     width: 178px;
@@ -3460,11 +3462,11 @@ a:hover {
   }
   .booking-panel .iframe-wrapper {
     margin: 24px 0 80px;
-    width: 365px;
-    height: 255px;
+    width: 400px;
+    height: 290px;
     border-radius: 15px;
     position: relative;
-    left: 20px;
+    left: 50px;
     -webkit-box-shadow: 17.3896px 26.0844px 34.7793px rgba(62, 68, 128, 0.25), inset -0.86948px -4.34741px 8.69482px rgba(102, 131, 188, 0.25), inset 4.34741px 0.86948px 8.69482px #FFFFFF;
             box-shadow: 17.3896px 26.0844px 34.7793px rgba(62, 68, 128, 0.25), inset -0.86948px -4.34741px 8.69482px rgba(102, 131, 188, 0.25), inset 4.34741px 0.86948px 8.69482px #FFFFFF;
   }
@@ -3475,8 +3477,8 @@ a:hover {
     display: none;
   }
   .booking-panel .iframe-wrapper iframe {
-    width: 342.71px;
-    height: 235px;
+    width: 377.71px;
+    height: 270px;
     border-radius: 12px;
   }
   .how-it-work__wrapper {
@@ -3547,6 +3549,8 @@ a:hover {
     min-width: 280px;
     height: 280px;
     left: -125px;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   .system-options__item .round-item::before {
     width: 269.35px;
@@ -3564,8 +3568,8 @@ a:hover {
     min-width: 230px;
     height: 240px;
     right: 0;
-    -webkit-transform: translateX(calc(50vw + 100px));
-            transform: translateX(calc(50vw + 100px));
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   .system-options__item .rect-item::before {
     width: 261.99px;
@@ -3583,6 +3587,7 @@ a:hover {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    opacity: 1;
   }
   .system-options__item .first-text .h7,
   .system-options__item .second-text .h7 {
