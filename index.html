@@ -730,25 +730,35 @@
     }
 
     const popupMenu = document.querySelector('.menu-popup')
+    const htmlElement = document.querySelector('html')
     if (window.innerWidth < 768) {
-      console.log(window.innerHeight)
-      console.log(popupMenu)
       popupMenu.style.height = window.innerHeight + 'px';
     }
     const btnClosePopupMenu = document.querySelector('.menu-popup__btn-close')
     document.addEventListener('click', (e) => {
       if (e.target.closest('.header__menu')) {
         popupMenu.classList.toggle('active')
+        if (popupMenu.classList.contains('active')) {
+            htmlElement.style.overflowY = 'hidden'
+        } else {
+          htmlElement.style.overflowY = 'auto'
+        }
         return
       }
       if (!e.target.closest('.menu-popup')) {
           popupMenu.classList.remove('active')
+          if (popupMenu.classList.contains('active')) {
+              htmlElement.style.overflowY = 'hidden'
+          } else {
+            htmlElement.style.overflowY = 'auto'
+          }
           return
         }
     })
     btnClosePopupMenu.onclick = (e) => {
       e.stopPropagation()
       popupMenu.classList.remove('active')
+      htmlElement.style.overflowY = 'auto'
     }
 
     if (!(window.innerWidth < 768)) {
