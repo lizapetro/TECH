@@ -1704,7 +1704,7 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #33ccff;
+  background-color: #66D1FC;
   position: relative;
   padding: 109px 0 103px;
   height: 417px;
@@ -3553,7 +3553,7 @@ a:hover {
     display: none;
   }
   .booking-panel .iframe-wrapper iframe {
-    width: 316.35px;
+    width: 317.35px;
     height: 237.52px;
     border-radius: 12px;
   }
