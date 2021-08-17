@@ -95,6 +95,7 @@ input {
   line-height: 180%;
   letter-spacing: -0.01em;
   font-family: 'Active Grotesk Corp';
+  outline-color: #66D1FC;
 }
 
 input::-webkit-input-placeholder {
@@ -111,6 +112,10 @@ input::-ms-input-placeholder {
 
 input::placeholder {
   color: #B6B6B6;
+}
+
+input.error {
+  background-color: rgba(243, 76, 56, 0.1);
 }
 
 button {
@@ -305,7 +310,7 @@ a:hover {
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 767px) {
   .header-1_mobile {
     font-family: 'Gilroy' !important;
     font-weight: 400 !important;
