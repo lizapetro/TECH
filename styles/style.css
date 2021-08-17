@@ -95,7 +95,7 @@ input {
   line-height: 180%;
   letter-spacing: -0.01em;
   font-family: 'Active Grotesk Corp';
-  outline-color: #66D1FC;
+  outline-color: #33ccff;
 }
 
 input::-webkit-input-placeholder {
@@ -131,7 +131,7 @@ button {
   height: 65px;
   border-radius: 5px;
   border: none;
-  background-color: #66D1FC;
+  background-color: #33ccff;
   color: #FFFFFF;
   cursor: pointer;
 }
@@ -170,7 +170,7 @@ button:hover {
 
 .font_pips {
   font-family: 'PIPS';
-  color: #66D1FC;
+  color: #33ccff;
 }
 
 .block_100vw {
@@ -191,7 +191,7 @@ button:hover {
 }
 
 .font-color_blue {
-  color: #66D1FC;
+  color: #33ccff;
 }
 
 * {
@@ -495,7 +495,7 @@ a:hover {
   padding-left: 120px;
   z-index: 1;
   border-radius: 15px;
-  border: 1px solid #66D1FC;
+  border: 1px solid #33ccff;
   visibility: hidden;
 }
 
@@ -535,7 +535,7 @@ a:hover {
 }
 
 .header.header_blue {
-  background-color: #66D1FC;
+  background-color: #33ccff;
 }
 
 .header.header_blue .logo-blue {
@@ -555,7 +555,7 @@ a:hover {
 }
 
 .header.header_blue .contacts-tg path:last-child {
-  fill: #66D1FC;
+  fill: #33ccff;
 }
 
 .header.header_blue .contacts-whatsapp path:first-child {
@@ -1086,6 +1086,10 @@ a:hover {
   top: 520px;
 }
 
+.booking-panel {
+  margin-top: 150px;
+}
+
 .booking-panel .title::before {
   width: 284.2px;
   height: 88.81px;
@@ -1291,7 +1295,7 @@ a:hover {
 }
 
 .how-it-work__instruction .instruction__item .main-text-1 {
-  color: #66D1FC;
+  color: #33ccff;
 }
 
 .how-it-work__instruction:nth-child(2) img {
@@ -1442,7 +1446,7 @@ a:hover {
   width: 482px;
   height: 482px;
   position: relative;
-  background-color: #82D9FC;
+  background-color: #33ccff;
   border-radius: 50%;
   -webkit-transform: translateX(-50vw);
           transform: translateX(-50vw);
@@ -1463,7 +1467,7 @@ a:hover {
 .system-options .rect-item {
   width: 454px;
   height: 431px;
-  background-color: #82D9FC;
+  background-color: #33ccff;
   -webkit-transform: translateX(50vw);
           transform: translateX(50vw);
 }
@@ -1683,7 +1687,7 @@ a:hover {
   bottom: 10px;
   left: -2px;
   width: calc(100% + 4px);
-  border-bottom: 4px solid #66D1FC;
+  border-bottom: 4px solid #33ccff;
   z-index: -1;
 }
 
@@ -1704,7 +1708,7 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #66D1FC;
+  background-color: #33ccff;
   position: relative;
   padding: 109px 0 103px;
   height: 417px;
@@ -1855,7 +1859,7 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #66D1FC;
+  color: #33ccff;
   margin-bottom: 30px;
 }
 
@@ -2083,7 +2087,7 @@ a:hover {
 }
 
 .reviews .review-autor .autor__company {
-  color: #66D1FC;
+  color: #33ccff;
 }
 
 .reviews .swiper-button-prev,
@@ -2096,7 +2100,7 @@ a:hover {
 
 .news-subscription {
   padding: 108px 0 138px;
-  background-color: #66D1FC;
+  background-color: #33ccff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2253,7 +2257,7 @@ a:hover {
   margin: 0;
   font-weight: 400;
   letter-spacing: -0.01em;
-  color: #66D1FC;
+  color: #33ccff;
   text-decoration: none;
 }
 
@@ -2290,7 +2294,7 @@ a:hover {
 }
 
 .footer__other-info .company-info span a {
-  color: #66D1FC;
+  color: #33ccff;
 }
 
 .footer__other-info .company-info span a:hover {
@@ -2596,7 +2600,7 @@ a:hover {
     top: 63%;
   }
   .booking-panel {
-    margin-top: 67px;
+    margin-top: 30px;
     width: 100%;
     max-width: 768px;
   }
@@ -2716,6 +2720,11 @@ a:hover {
     height: 171px;
     margin-left: 46px;
     margin-right: 37px;
+  }
+  .how-it-work__instruction:nth-child(3)::before {
+    width: 25.57px;
+    left: 288px;
+    bottom: 37.71px;
   }
   .how-it-work__instruction:nth-child(4) .instruction__item {
     width: 264px;
@@ -3092,7 +3101,7 @@ a:hover {
     max-width: 688px;
   }
   .news-subscription__wrapper h2 {
-    margin-bottom: 33px;
+    margin-bottom: 19px;
   }
   .news-subscription__wrapper .font_pips {
     margin-right: 59px;
@@ -3117,17 +3126,23 @@ a:hover {
     top: 35px;
     right: 63px;
   }
+  .news-subscription__social-network {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
   .news-subscription__social-network .social-network__wrapper {
-    width: 70px;
-    height: 80px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    margin-bottom: 16px;
   }
   .news-subscription__social-network .social-network__wrapper a {
     margin-right: 0 !important;
+  }
+  .news-subscription__social-network .social-network__wrapper a:not(:last-child) {
+    margin-right: 20px !important;
   }
   .news-subscription__social-network .social-network__wrapper img {
     width: 25px;
@@ -3155,7 +3170,7 @@ a:hover {
   }
   .footer__main-info h3 {
     margin: 21px 0 2px;
-    color: #66D1FC;
+    color: #33ccff;
   }
   .footer__main-info .main-text-1 {
     width: 261px;
@@ -3498,7 +3513,7 @@ a:hover {
     bottom: 32px;
   }
   .booking-panel {
-    margin-top: 109px;
+    margin-top: 50px;
     width: 100%;
     max-width: 320px;
   }
@@ -3599,6 +3614,9 @@ a:hover {
   }
   .how-it-work__instruction:nth-child(3) .main-text-1 {
     max-width: 243px;
+  }
+  .how-it-work__instruction:nth-child(3)::before {
+    display: none;
   }
   .how-it-work__instruction:nth-child(4) .instruction__item {
     width: 281px;
@@ -4027,6 +4045,27 @@ a:hover {
   }
   .news-subscription::after, .news-subscription::before {
     display: none;
+  }
+  .news-subscription__social-network {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .news-subscription__social-network .social-network__wrapper {
+    width: 70px;
+    height: 80px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .news-subscription__social-network .social-network__wrapper a:not(:last-child) {
+    margin-right: 0 !important;
   }
   .news-subscription__social-network::after {
     width: 156px;

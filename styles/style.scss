@@ -539,6 +539,7 @@
 }
 
 .booking-panel {
+    margin-top: 150px;
     .title {
         &::before {
             width: 284.2px;
@@ -1759,7 +1760,7 @@
         }
     }
     .booking-panel {
-        margin-top: 67px;
+        margin-top: 30px;
         width: 100%;
         max-width: 768px;
         .advantages {
@@ -1889,6 +1890,11 @@
                     height: 171px;
                     margin-left: 46px;
                     margin-right: 37px;
+                }
+                &::before {
+                    width: 25.57px;
+                    left: 288px;
+                    bottom: 37.71px;
                 }
             }
             &:nth-child(4) {
@@ -2280,7 +2286,7 @@
             width: 100%;
             max-width: 688px;
             h2 {
-                margin-bottom: 33px;
+                margin-bottom: 19px;
             }
             .font_pips {
                 margin-right: 59px;
@@ -2308,13 +2314,15 @@
             }
         }
         &__social-network {
+            flex-direction: column-reverse;
+            align-items: flex-start;
            .social-network__wrapper {
-                width: 70px;
-                height: 80px;
-                flex-wrap: wrap;
-                justify-content: space-between;
+               margin-bottom: 16px;
                 a {
                     margin-right: 0 !important;
+                    &:not(:last-child) {
+                        margin-right: 20px !important;
+                    }
                 }
                 img {
                     width: 25px;
@@ -2703,7 +2711,7 @@
         }
     }
     .booking-panel {
-        margin-top: 109px;
+        margin-top: 50px;
         width: 100%;
         max-width: 320px;
         .advantages {
@@ -2812,6 +2820,9 @@
                 }
                 .main-text-1 {
                     max-width: 243px;
+                }
+                &::before {
+                    display: none;
                 }
             }
             &:nth-child(4) {
@@ -3222,6 +3233,19 @@
             display: none;
         }
         &__social-network {
+            flex-direction: row;
+            align-items: center;
+            .social-network__wrapper {
+                width: 70px;
+                height: 80px;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                a {
+                    &:not(:last-child) {
+                        margin-right: 0 !important;  
+                    }
+                }
+            }
             &::after {
                 width: 156px;
                 height: 102px;
