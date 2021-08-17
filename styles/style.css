@@ -1155,8 +1155,8 @@ a:hover {
           justify-content: center;
   margin: 110px 0 220px;
   border-radius: 36px;
-  height: 490px;
-  width: 680px;
+  width: 635px;
+  height: 485px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 36.3895px 54.5843px 72.7791px rgba(62, 68, 128, 0.25), inset -1.81948px -9.09739px 18.1948px rgba(102, 131, 188, 0.25), inset 9.09739px 1.81948px 18.1948px #FFFFFF;
           box-shadow: 36.3895px 54.5843px 72.7791px rgba(62, 68, 128, 0.25), inset -1.81948px -9.09739px 18.1948px rgba(102, 131, 188, 0.25), inset 9.09739px 1.81948px 18.1948px #FFFFFF;
@@ -1164,6 +1164,8 @@ a:hover {
 
 .booking-panel .iframe-wrapper iframe {
   border-radius: 22px;
+  width: 602px;
+  height: 452px;
 }
 
 .booking-panel .iframe-wrapper::before {
@@ -2627,8 +2629,8 @@ a:hover {
   }
   .booking-panel .iframe-wrapper {
     margin: 72px 0 122px;
-    width: 608px;
-    height: 425.26px;
+    width: 556.44px;
+    height: 425px;
   }
   .booking-panel .iframe-wrapper::before {
     width: 160px;
@@ -2659,8 +2661,8 @@ a:hover {
     right: -141px;
   }
   .booking-panel .iframe-wrapper iframe {
-    width: 578.26px;
-    height: 396.65px;
+    width: 527.53px;
+    height: 396.08px;
   }
   .how-it-work {
     padding-bottom: 72px;
@@ -3536,8 +3538,8 @@ a:hover {
   }
   .booking-panel .iframe-wrapper {
     margin: 24px 0 80px;
-    width: 400px;
-    height: 290px;
+    width: 333.69px;
+    height: 254.87px;
     border-radius: 15px;
     position: relative;
     left: 50px;
@@ -3551,8 +3553,8 @@ a:hover {
     display: none;
   }
   .booking-panel .iframe-wrapper iframe {
-    width: 377.71px;
-    height: 270px;
+    width: 316.35px;
+    height: 237.52px;
     border-radius: 12px;
   }
   .how-it-work__wrapper {
