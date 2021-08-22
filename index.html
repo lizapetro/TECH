@@ -831,19 +831,23 @@
     }
 
     const controller1 = new ScrollMagic.Controller()
+
+    const offsetMobilrApp = window.innerWidth > 768 ? -500 : -300
+    const coef = window.innerWidth > 768 ? 1 : 0.5
+
     
     const tweenBlock1 = TweenMax.to(".mobile-app .animation-block-1", 0.5, {width: '0'});
     const tweenBlock2= TweenMax.to(".mobile-app .animation-block-2", 0.5, {height: '0'});
     const tweenBlock3 = TweenMax.to(".mobile-app .animation-block-3", 0.5, {width: '0'});
     const tweenBlock4 = TweenMax.to(".mobile-app .animation-block-4", 0.5, {height: '0'});
 
-    const sceneAnimationBlock1 = new ScrollMagic.Scene({triggerElement: ".partners", duration: 150})
+    const sceneAnimationBlock1 = new ScrollMagic.Scene({triggerElement: ".mobile-app .title", offset: offsetMobilrApp, duration: 300 * coef})
         .setTween(tweenBlock1)
-    const sceneAnimationBlock2 = new ScrollMagic.Scene({triggerElement: ".partners", offset: 150, duration: 50})
+    const sceneAnimationBlock2 = new ScrollMagic.Scene({triggerElement: ".mobile-app .title", offset: offsetMobilrApp + 300 * coef, duration: 200 * coef})
       .setTween(tweenBlock2)
-    const sceneAnimationBlock3 = new ScrollMagic.Scene({triggerElement: ".partners", offset: 200, duration: 150})
+    const sceneAnimationBlock3 = new ScrollMagic.Scene({triggerElement: ".mobile-app .title", offset: offsetMobilrApp + 500 * coef, duration: 300 * coef})
       .setTween(tweenBlock3)
-    const sceneAnimationBlock4 = new ScrollMagic.Scene({triggerElement: ".partners", offset: 350,duration: 50})
+    const sceneAnimationBlock4 = new ScrollMagic.Scene({triggerElement: ".mobile-app .title", offset: offsetMobilrApp + 800 * coef, duration: 200 * coef})
       .setTween(tweenBlock4)
 
     controller1.addScene([
@@ -853,7 +857,8 @@
       sceneAnimationBlock4
     ]);
 
-    const offsetBookingPanel = window.innerWidth > 768 ? 1200 : 700
+    const offsetBookingPanel = window.innerWidth > 768 ? -500 : -300
+    const coefBookingPanel = window.innerWidth > 768 ? 1 : 0.5
 
     const controller2 = new ScrollMagic.Controller()
     
@@ -862,13 +867,13 @@
     const tweenBookingPanel3 = TweenMax.to(".booking-panel .animation-block-3", 0.5, {width: '0'});
     const tweenBookingPanel4 = TweenMax.to(".booking-panel .animation-block-4", 0.5, {height: '0'});
 
-    const sceneBookingPanel1 = new ScrollMagic.Scene({triggerElement: ".admin-panel", offset: offsetBookingPanel,duration: 150})
+    const sceneBookingPanel1 = new ScrollMagic.Scene({triggerElement: ".booking-panel .title", offset: offsetBookingPanel, duration: 300 * coefBookingPanel})
         .setTween(tweenBookingPanel1)
-    const sceneBookingPanel2 = new ScrollMagic.Scene({triggerElement: ".admin-panel", offset: offsetBookingPanel + 150, duration: 50})
+    const sceneBookingPanel2 = new ScrollMagic.Scene({triggerElement: ".booking-panel .title", offset: offsetBookingPanel + 300 * coefBookingPanel, duration: 200 * coefBookingPanel})
       .setTween(tweenBookingPanel2)
-    const sceneBookingPanel3 = new ScrollMagic.Scene({triggerElement: ".admin-panel", offset: offsetBookingPanel + 200, duration: 150})
+    const sceneBookingPanel3 = new ScrollMagic.Scene({triggerElement: ".booking-panel .title", offset: offsetBookingPanel + 500 * coefBookingPanel, duration: 300 * coefBookingPanel})
       .setTween(tweenBookingPanel3)
-    const sceneBookingPanel4 = new ScrollMagic.Scene({triggerElement: ".admin-panel", offset: offsetBookingPanel + 350, duration: 50})
+    const sceneBookingPanel4 = new ScrollMagic.Scene({triggerElement: ".booking-panel .title", offset: offsetBookingPanel + 800 * coefBookingPanel, duration: 200 * coefBookingPanel})
       .setTween(tweenBookingPanel4)
 
     controller2.addScene([
@@ -912,13 +917,13 @@
     const tweenAdminPanel3 = TweenMax.to("#admin-panel .animation-block-3", 0.5, {width: '0'});
     const tweenAdminPanel4 = TweenMax.to("#admin-panel .animation-block-4", 0.5, {height: '0'});
 
-    const sceneAdminPanel1 = new ScrollMagic.Scene({triggerElement: "#admin-panel", duration: 40})
+    const sceneAdminPanel1 = new ScrollMagic.Scene({triggerElement: "#admin-panel .title", offset: offsetBookingPanel, duration: 300 * coefBookingPanel})
       .setTween(tweenAdminPanel1)
-    const sceneAdminPanel2 = new ScrollMagic.Scene({triggerElement: "#admin-panel", offset: 40, duration: 20})
+    const sceneAdminPanel2 = new ScrollMagic.Scene({triggerElement: "#admin-panel .title", offset: offsetBookingPanel + 300 * coefBookingPanel, duration: 200 * coefBookingPanel})
       .setTween(tweenAdminPanel2)
-    const sceneAdminPanel3 = new ScrollMagic.Scene({triggerElement: "#admin-panel", offset: 60, duration: 40})
+    const sceneAdminPanel3 = new ScrollMagic.Scene({triggerElement: "#admin-panel .title", offset: offsetBookingPanel + 500 * coefBookingPanel, duration: 300 * coefBookingPanel})
       .setTween(tweenAdminPanel3)
-    const sceneAdminPanel4 = new ScrollMagic.Scene({triggerElement: "#admin-panel", offset: 100, duration: 20})
+    const sceneAdminPanel4 = new ScrollMagic.Scene({triggerElement: "#admin-panel .title", offset: offsetBookingPanel + 800 * coefBookingPanel, duration: 200 * coefBookingPanel})
       .setTween(tweenAdminPanel4)
 
     controller4.addScene([
@@ -935,13 +940,13 @@
     const tweenAdvantages3 = TweenMax.to("#advantages .animation-block-3", 0.5, {width: '0'});
     const tweenAdvantages4 = TweenMax.to("#advantages .animation-block-4", 0.5, {height: '0'});
 
-    const sceneAdvantages1 = new ScrollMagic.Scene({triggerElement: "#advantages", duration: 40})
+    const sceneAdvantages1 = new ScrollMagic.Scene({triggerElement: "#advantages .title", offset: offsetBookingPanel, duration: 300 * coefBookingPanel})
       .setTween(tweenAdvantages1)
-    const sceneAdvantages2 = new ScrollMagic.Scene({triggerElement: "#advantages", offset: 40, duration: 20})
+    const sceneAdvantages2 = new ScrollMagic.Scene({triggerElement: "#advantages .title", offset: offsetBookingPanel + 300 * coefBookingPanel, duration: 200 * coefBookingPanel})
       .setTween(tweenAdvantages2)
-    const sceneAdvantages3 = new ScrollMagic.Scene({triggerElement: "#advantages", offset: 60, duration: 40})
+    const sceneAdvantages3 = new ScrollMagic.Scene({triggerElement: "#advantages .title", offset: offsetBookingPanel + 500 * coefBookingPanel, duration: 300 * coefBookingPanel})
       .setTween(tweenAdvantages3)
-    const sceneAdvantages4 = new ScrollMagic.Scene({triggerElement: "#advantages", offset: 100, duration: 20})
+    const sceneAdvantages4 = new ScrollMagic.Scene({triggerElement: "#advantages .title", offset: offsetBookingPanel + 800 * coefBookingPanel, duration: 200 * coefBookingPanel})
       .setTween(tweenAdvantages4)
 
     controller5.addScene([

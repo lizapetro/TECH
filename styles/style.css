@@ -4176,8 +4176,8 @@ a:hover {
 .mobile-app .animation-block-2 {
   width: 40px;
   height: 43px;
-  bottom: 0px;
-  left: 220px;
+  bottom: -1px;
+  left: 216px;
 }
 
 .mobile-app .animation-block-3 {
