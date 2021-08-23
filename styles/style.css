@@ -4345,15 +4345,18 @@ a:hover {
             transform: rotate(12deg);
   }
   .main-baner .animation-block-3 {
-    width: 144px;
-    height: 55px;
-    top: 94px;
-    left: -4px;
-    border-bottom: 17px solid white;
-    border-radius: 47%;
-    -webkit-transform: rotate(-3deg);
-            transform: rotate(-3deg);
-    background-color: transparent;
+    width: 102px;
+    height: 10px;
+    top: 130px;
+    left: -2px;
+  }
+  .main-baner .animation-block-6 {
+    width: 41px;
+    height: 10px;
+    top: 125px;
+    left: 99px;
+    -webkit-transform: rotate(-11deg);
+            transform: rotate(-11deg);
   }
   .main-baner .animation-block-4 {
     width: 15px;
