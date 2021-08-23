@@ -85,9 +85,11 @@
           <div class="animation-block animation-block-1"></div>
           <div class="animation-block animation-block-5"></div>
           <div class="animation-block animation-block-2"></div>
+          <div class="animation-block animation-block-7"></div>
           <div class="animation-block animation-block-3"></div>
           <div class="animation-block animation-block-6"></div>
           <div class="animation-block animation-block-4"></div>
+          <div class="animation-block animation-block-8"></div>
           рабочих
         </span>
         мест
@@ -875,6 +877,8 @@
     const tweenMainBaner4 = TweenMax.to(".main-baner .animation-block-4", 0.5, {height: '0'});
     const tweenMainBaner5 = TweenMax.to(".main-baner .animation-block-5", 0.5, {width: '0'});
     const tweenMainBaner6 = TweenMax.to(".main-baner .animation-block-6", 0.5, {width: '0'});
+    const tweenMainBaner7 = TweenMax.to(".main-baner .animation-block-7", 0.5, {height: '0'});
+    const tweenMainBaner8 = TweenMax.to(".main-baner .animation-block-8", 0.5, {width: '0'});
 
     const sceneMainBaner0 = new ScrollMagic.Scene({triggerElement: ".main-baner .font-pips", offset: 0, duration: 10})
       .setTween(tweenMainBaner0)
@@ -882,12 +886,16 @@
       .setTween(tweenMainBaner1)
     const sceneMainBaner5 = new ScrollMagic.Scene({triggerElement: ".main-baner .font-pips", offset: 20, duration: 20})
       .setTween(tweenMainBaner5)
-    const sceneMainBaner2 = new ScrollMagic.Scene({triggerElement: ".main-baner .font-pips", offset: 40, duration: 20})
+    const sceneMainBaner2 = new ScrollMagic.Scene({triggerElement: ".main-baner .font-pips", offset: 40, duration: 10})
       .setTween(tweenMainBaner2)
-    const sceneMainBaner3 = new ScrollMagic.Scene({triggerElement: ".main-baner .font-pips", offset: 80, duration: 20})
-      .setTween(tweenMainBaner3)
+    const sceneMainBaner7 = new ScrollMagic.Scene({triggerElement: ".main-baner .font-pips", offset: 50, duration: 10})
+      .setTween(tweenMainBaner7)
     const sceneMainBaner6 = new ScrollMagic.Scene({triggerElement: ".main-baner .font-pips", offset: 60, duration: 20})
       .setTween(tweenMainBaner6)
+    const sceneMainBaner3 = new ScrollMagic.Scene({triggerElement: ".main-baner .font-pips", offset: 80, duration: 15})
+      .setTween(tweenMainBaner3)
+    const sceneMainBaner8 = new ScrollMagic.Scene({triggerElement: ".main-baner .font-pips", offset: 95, duration: 5})
+      .setTween(tweenMainBaner8)
     const sceneMainBaner4 = new ScrollMagic.Scene({triggerElement: ".main-baner .font-pips", offset: 100, duration: 20})
       .setTween(tweenMainBaner4)
 
@@ -898,7 +906,9 @@
       sceneMainBaner2,
       sceneMainBaner3,
       sceneMainBaner4,
-      sceneMainBaner6
+      sceneMainBaner6,
+      sceneMainBaner7,
+      sceneMainBaner8
     ]);
 
   </script>

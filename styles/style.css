@@ -4340,31 +4340,39 @@ a:hover {
   }
   .main-baner .animation-block-2 {
     width: 17px;
-    height: 30px;
+    height: 11px;
+    bottom: 32px;
+    left: 136px;
+  }
+  .main-baner .animation-block-7 {
+    width: 17px;
+    height: 20px;
     bottom: 12px;
     left: 138px;
-    -webkit-transform: rotate(-3deg);
-            transform: rotate(-3deg);
   }
   .main-baner .animation-block-3 {
-    width: 102px;
+    width: 113px;
     height: 10px;
-    top: 130px;
-    left: -2px;
+    top: 127px;
+    left: 5px;
   }
   .main-baner .animation-block-6 {
-    width: 41px;
+    width: 20px;
     height: 10px;
-    top: 125px;
-    left: 99px;
-    -webkit-transform: rotate(-11deg);
-            transform: rotate(-11deg);
+    top: 122px;
+    left: 118px;
   }
   .main-baner .animation-block-4 {
-    width: 15px;
-    height: 26px;
-    top: 107px;
+    width: 16px;
+    height: 28px;
+    top: 106px;
     left: -14px;
+  }
+  .main-baner .animation-block-8 {
+    width: 3px;
+    height: 6px;
+    top: 130px;
+    left: 2px;
   }
 }
 
