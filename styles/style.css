@@ -4320,29 +4320,31 @@ a:hover {
   .main-baner .animation-block {
     display: block;
   }
+  .main-baner .animation-block-0 {
+    width: 20px;
+    height: 8px;
+    top: 93px;
+    right: 234px;
+  }
   .main-baner .animation-block-1 {
-    width: 67px;
+    width: 21px;
     height: 8px;
     top: 89px;
-    right: 188px;
-    -webkit-transform: rotate(-8deg);
-            transform: rotate(-8deg);
+    right: 221px;
   }
   .main-baner .animation-block-5 {
-    width: 64px;
+    width: 98px;
     height: 8px;
-    top: 89px;
-    right: 124px;
-    -webkit-transform: rotate(8deg);
-            transform: rotate(8deg);
+    top: 87px;
+    right: 128px;
   }
   .main-baner .animation-block-2 {
     width: 17px;
     height: 30px;
-    bottom: 10px;
-    left: 141px;
-    -webkit-transform: rotate(12deg);
-            transform: rotate(12deg);
+    bottom: 12px;
+    left: 138px;
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
   }
   .main-baner .animation-block-3 {
     width: 102px;

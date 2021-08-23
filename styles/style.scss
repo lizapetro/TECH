@@ -3503,26 +3503,30 @@
         .animation-block {
             display: block;
         }
+        .animation-block-0{
+            width: 20px;
+            height: 8px;
+            top: 93px;
+            right: 234px;
+        }
         .animation-block-1{
-            width: 67px;
+            width: 21px;
             height: 8px;
             top: 89px;
-            right: 188px;
-            transform: rotate(-8deg);
+            right: 221px;
         }
         .animation-block-5 {
-            width: 64px;
+            width: 98px;
             height: 8px;
-            top: 89px;
-            right: 124px;
-            transform: rotate(8deg);
+            top: 87px;
+            right: 128px;
         }
         .animation-block-2 {
             width: 17px;
             height: 30px;
-            bottom: 10px;
-            left: 141px;
-            transform: rotate(12deg);
+            bottom: 12px;
+            left: 138px;
+            transform: rotate(-3deg);
         }
         .animation-block-3 {
             width: 102px;
