@@ -546,10 +546,6 @@ a:hover {
   display: none;
 }
 
-.header.header_blue a {
-  color: #FFFFFF;
-}
-
 .header.header_blue .contacts-tg path:first-child {
   fill: #FFFFFF;
 }
