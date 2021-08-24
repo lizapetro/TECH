@@ -81,15 +81,6 @@
       <span class="main-baner__title header-1_tablet header-1_mobile">
         Система бронирования 
         <span class="font_pips header-2_tablet header-2_mobile">
-          <div class="animation-block animation-block-0"></div>
-          <div class="animation-block animation-block-1"></div>
-          <div class="animation-block animation-block-5"></div>
-          <div class="animation-block animation-block-2"></div>
-          <div class="animation-block animation-block-7"></div>
-          <div class="animation-block animation-block-3"></div>
-          <div class="animation-block animation-block-6"></div>
-          <div class="animation-block animation-block-4"></div>
-          <div class="animation-block animation-block-8"></div>
           рабочих
         </span>
         мест
@@ -867,49 +858,6 @@
     handleAnimationTitle('.booking-panel')
     handleAnimationTitle('#admin-panel')
     handleAnimationTitle('#advantages')
-
-    const controller3 = new ScrollMagic.Controller()
-    
-    const tweenMainBaner0 = TweenMax.to(".main-baner .animation-block-0", 0.5, {width: '0'});
-    const tweenMainBaner1 = TweenMax.to(".main-baner .animation-block-1", 0.5, {width: '0'});
-    const tweenMainBaner2= TweenMax.to(".main-baner .animation-block-2", 0.5, {height: '0'});
-    const tweenMainBaner3 = TweenMax.to(".main-baner .animation-block-3", 0.5, {width: '0'});
-    const tweenMainBaner4 = TweenMax.to(".main-baner .animation-block-4", 0.5, {height: '0'});
-    const tweenMainBaner5 = TweenMax.to(".main-baner .animation-block-5", 0.5, {width: '0'});
-    const tweenMainBaner6 = TweenMax.to(".main-baner .animation-block-6", 0.5, {width: '0'});
-    const tweenMainBaner7 = TweenMax.to(".main-baner .animation-block-7", 0.5, {height: '0'});
-    const tweenMainBaner8 = TweenMax.to(".main-baner .animation-block-8", 0.5, {width: '0'});
-
-    const sceneMainBaner0 = new ScrollMagic.Scene({triggerElement: ".main-baner .font-pips", offset: 0, duration: 10})
-      .setTween(tweenMainBaner0)
-    const sceneMainBaner1 = new ScrollMagic.Scene({triggerElement: ".main-baner .font-pips", offset: 10, duration: 10})
-      .setTween(tweenMainBaner1)
-    const sceneMainBaner5 = new ScrollMagic.Scene({triggerElement: ".main-baner .font-pips", offset: 20, duration: 20})
-      .setTween(tweenMainBaner5)
-    const sceneMainBaner2 = new ScrollMagic.Scene({triggerElement: ".main-baner .font-pips", offset: 40, duration: 10})
-      .setTween(tweenMainBaner2)
-    const sceneMainBaner7 = new ScrollMagic.Scene({triggerElement: ".main-baner .font-pips", offset: 50, duration: 10})
-      .setTween(tweenMainBaner7)
-    const sceneMainBaner6 = new ScrollMagic.Scene({triggerElement: ".main-baner .font-pips", offset: 60, duration: 20})
-      .setTween(tweenMainBaner6)
-    const sceneMainBaner3 = new ScrollMagic.Scene({triggerElement: ".main-baner .font-pips", offset: 80, duration: 15})
-      .setTween(tweenMainBaner3)
-    const sceneMainBaner8 = new ScrollMagic.Scene({triggerElement: ".main-baner .font-pips", offset: 95, duration: 5})
-      .setTween(tweenMainBaner8)
-    const sceneMainBaner4 = new ScrollMagic.Scene({triggerElement: ".main-baner .font-pips", offset: 100, duration: 20})
-      .setTween(tweenMainBaner4)
-
-    controller3.addScene([
-      sceneMainBaner0,
-      sceneMainBaner1,
-      sceneMainBaner5,
-      sceneMainBaner2,
-      sceneMainBaner3,
-      sceneMainBaner4,
-      sceneMainBaner6,
-      sceneMainBaner7,
-      sceneMainBaner8
-    ]);
 
   </script>
 </body>
