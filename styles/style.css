@@ -3296,7 +3296,7 @@ a:hover {
   .main-baner__title .font_pips::before {
     width: 166px;
     height: 48px;
-    right: 114.49px;
+    right: 114px;
   }
   .main-baner__description {
     margin-top: 36px;
@@ -4321,19 +4321,19 @@ a:hover {
     display: block;
   }
   .main-baner .animation-block-0 {
-    width: 20px;
-    height: 8px;
-    top: 93px;
-    right: 234px;
+    width: 29px;
+    height: 12px;
+    top: 90px;
+    right: 226px;
   }
   .main-baner .animation-block-1 {
-    width: 21px;
+    width: 10px;
     height: 8px;
-    top: 89px;
-    right: 221px;
+    top: 88px;
+    right: 216px;
   }
   .main-baner .animation-block-5 {
-    width: 98px;
+    width: 88px;
     height: 8px;
     top: 87px;
     right: 128px;
@@ -4357,7 +4357,7 @@ a:hover {
     left: 5px;
   }
   .main-baner .animation-block-6 {
-    width: 20px;
+    width: 22px;
     height: 10px;
     top: 122px;
     left: 118px;
@@ -4369,10 +4369,10 @@ a:hover {
     left: -14px;
   }
   .main-baner .animation-block-8 {
-    width: 3px;
+    width: 7px;
     height: 6px;
     top: 130px;
-    left: 2px;
+    left: 0px;
   }
 }
 
