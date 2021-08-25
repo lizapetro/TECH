@@ -327,9 +327,17 @@
             }
         }
     }
+    .mobile-app-swiper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .mobile-app-swiper__wrapper {
         width: 100vw;
         position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         &::before {
             content: '';
             display: block;
