@@ -349,17 +349,25 @@
         }
         .swiper-container {
             width: 100%;
-            max-width: 1200px;
             height: 740px;
         }
     }
 }
+.swiper-button__group {
+    width: 100%;
+    max-width: 1200px;
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
 .swiper-button-next,
 .swiper-button-prev {
+    position: relative !important;
+    top: 45%;
     &::after {
         display: none;
     }
-    top: 45%;
     background-image: url(../assets/icons/arrow.svg);
     background-repeat: no-repeat;
 }
@@ -373,6 +381,7 @@
     width: 100%;
     max-width: 1200px;
     position: relative;
+    overflow: hidden;
     &::before,
     &::after {
         content: '';
@@ -525,6 +534,7 @@
         background: #0F1319;
         box-shadow: -2.05836px 33.6199px 68.612px rgba(62, 68, 128, 0.25), inset -1.37224px -6.8612px 13.7224px rgba(102, 131, 188, 0.25), inset 6.8612px 1.37224px 13.7224px #212833;
         border-radius: 34.306px;
+        margin-bottom: 100px;
         img {
             width: 748.57px;
             height: 420.13px;
@@ -533,18 +543,16 @@
     }
     .swiper-container {
         width: 100%;
-        height: 900px;
         display: flex;
         justify-content: center;
     }
-    .swiper-button-next,
-    .swiper-button-prev {
-        top: 520px;
+    .swiper-button__group {
+        top: 80%;
     }
 }
 
 .booking-panel {
-    margin-top: 150px;
+    margin-top: 50px;
     .title {
         &::before {
             width: 284.2px;
@@ -1232,6 +1240,7 @@
     position: relative;
     width: 100%;
     max-width: 1200px;
+    overflow: hidden;
     &::before {
         content: '';
         display: block;
@@ -1294,12 +1303,14 @@
             }
         }
     }
+    .swiper-button__group {
+        top: 70%;
+    }
     .swiper-button-prev,
     .swiper-button-next {
         background-image: url(../assets/icons/arrow-review__desktop.svg);
         width: 24px;
         height: 44px;
-        top: 70%;
     }
 }
 
@@ -1636,7 +1647,7 @@
             }
         }
         .swiper-container {
-            width: 768px !important;
+            // width: 768px !important;
             height: auto !important;
         }
         &__slider-card {
@@ -1691,7 +1702,7 @@
             }
         }
         .swiper-container {
-            width: 768px !important;
+            // width: 768px !important;
             height: auto !important;
         }
         &__img-wrapper {
@@ -1756,12 +1767,14 @@
                 }
             }
         }
+        .swiper-button__group {
+            top: 78%;
+        }
         .swiper-button-next,
         .swiper-button-prev {
             width: 16px;
             height: 38px;
             background-image: url(../assets/icons/arrow__tablet.svg) !important;
-            top: 63%;
         }
     }
     .booking-panel {
@@ -2585,7 +2598,7 @@
             }
         }
         .swiper-container {
-            width: 320px !important;
+            // width: 320px !important;
         }
         &__slider-card {
             padding: 19px 0 0;
@@ -2673,7 +2686,7 @@
             }
         }
         .swiper-container {
-            width: 320px !important;
+            // width: 320px !important;
         }
         &__card {
             &.control {
@@ -2706,13 +2719,15 @@
             margin-top: 11px;
             width: 272px;
         }
+        .swiper-button__group {
+            top: auto;
+            bottom: 32px;
+        }
         .swiper-button-next,
         .swiper-button-prev {
             width: 17px;
             height: 32px;
             background-image: url(../assets/icons/arrow__mobile.svg) !important;
-            top: auto;
-            bottom: 32px;
         }
     }
     .booking-panel {
@@ -3223,11 +3238,13 @@
                 }
             }
         }
+        .swiper-button__group {
+            top: 74%;
+        }
         .swiper-button-next,
         .swiper-button-prev {
             width: 17px;
             height: 32px;
-            top: 74%;
             background-image: url(../assets/icons/arrow-review__mobile.svg);
         }
     }
