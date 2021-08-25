@@ -833,9 +833,30 @@ a:hover {
   display: none;
 }
 
+.mobile-app .mobile-app-swiper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .mobile-app .mobile-app-swiper__wrapper {
   width: 100vw;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .mobile-app .mobile-app-swiper__wrapper::before {
@@ -850,12 +871,28 @@ a:hover {
 
 .mobile-app .mobile-app-swiper__wrapper .swiper-container {
   width: 100%;
-  max-width: 1200px;
   height: 740px;
+}
+
+.swiper-button__group {
+  width: 100%;
+  max-width: 1200px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
+  position: relative !important;
   top: 45%;
   background-image: url(../assets/icons/arrow.svg);
   background-repeat: no-repeat;
@@ -877,6 +914,7 @@ a:hover {
   width: 100%;
   max-width: 1200px;
   position: relative;
+  overflow: hidden;
 }
 
 .admin-panel::before, .admin-panel::after {
@@ -1058,6 +1096,7 @@ a:hover {
   -webkit-box-shadow: -2.05836px 33.6199px 68.612px rgba(62, 68, 128, 0.25), inset -1.37224px -6.8612px 13.7224px rgba(102, 131, 188, 0.25), inset 6.8612px 1.37224px 13.7224px #212833;
           box-shadow: -2.05836px 33.6199px 68.612px rgba(62, 68, 128, 0.25), inset -1.37224px -6.8612px 13.7224px rgba(102, 131, 188, 0.25), inset 6.8612px 1.37224px 13.7224px #212833;
   border-radius: 34.306px;
+  margin-bottom: 100px;
 }
 
 .admin-panel__img-wrapper img {
@@ -1068,7 +1107,6 @@ a:hover {
 
 .admin-panel .swiper-container {
   width: 100%;
-  height: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1077,13 +1115,12 @@ a:hover {
           justify-content: center;
 }
 
-.admin-panel .swiper-button-next,
-.admin-panel .swiper-button-prev {
-  top: 520px;
+.admin-panel .swiper-button__group {
+  top: 80%;
 }
 
 .booking-panel {
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 .booking-panel .title::before {
@@ -2005,6 +2042,7 @@ a:hover {
   position: relative;
   width: 100%;
   max-width: 1200px;
+  overflow: hidden;
 }
 
 .reviews::before {
@@ -2086,12 +2124,15 @@ a:hover {
   color: #33ccff;
 }
 
+.reviews .swiper-button__group {
+  top: 70%;
+}
+
 .reviews .swiper-button-prev,
 .reviews .swiper-button-next {
   background-image: url(../assets/icons/arrow-review__desktop.svg);
   width: 24px;
   height: 44px;
-  top: 70%;
 }
 
 .news-subscription {
@@ -2484,7 +2525,6 @@ a:hover {
     top: 93px !important;
   }
   .mobile-app .swiper-container {
-    width: 768px !important;
     height: auto !important;
   }
   .mobile-app__slider-card {
@@ -2536,7 +2576,6 @@ a:hover {
     left: -56px;
   }
   .admin-panel .swiper-container {
-    width: 768px !important;
     height: auto !important;
   }
   .admin-panel__img-wrapper {
@@ -2588,12 +2627,14 @@ a:hover {
     right: -67px;
     bottom: -137px;
   }
+  .admin-panel .swiper-button__group {
+    top: 78%;
+  }
   .admin-panel .swiper-button-next,
   .admin-panel .swiper-button-prev {
     width: 16px;
     height: 38px;
     background-image: url(../assets/icons/arrow__tablet.svg) !important;
-    top: 63%;
   }
   .booking-panel {
     margin-top: 30px;
@@ -3390,9 +3431,6 @@ a:hover {
     height: 659px !important;
     top: 0 !important;
   }
-  .mobile-app .swiper-container {
-    width: 320px !important;
-  }
   .mobile-app__slider-card {
     padding: 19px 0 0;
     -webkit-box-orient: vertical;
@@ -3472,9 +3510,6 @@ a:hover {
   .admin-panel .advantages::before {
     display: none;
   }
-  .admin-panel .swiper-container {
-    width: 320px !important;
-  }
   .admin-panel__img-wrapper {
     width: 320px;
     height: 220px;
@@ -3500,13 +3535,15 @@ a:hover {
     margin-top: 11px;
     width: 272px;
   }
+  .admin-panel .swiper-button__group {
+    top: auto;
+    bottom: 32px;
+  }
   .admin-panel .swiper-button-next,
   .admin-panel .swiper-button-prev {
     width: 17px;
     height: 32px;
     background-image: url(../assets/icons/arrow__mobile.svg) !important;
-    top: auto;
-    bottom: 32px;
   }
   .booking-panel {
     margin-top: 50px;
@@ -4029,11 +4066,13 @@ a:hover {
   .reviews .review-autor .autor__company {
     margin-top: -5px;
   }
+  .reviews .swiper-button__group {
+    top: 74%;
+  }
   .reviews .swiper-button-next,
   .reviews .swiper-button-prev {
     width: 17px;
     height: 32px;
-    top: 74%;
     background-image: url(../assets/icons/arrow-review__mobile.svg);
   }
   .news-subscription {
