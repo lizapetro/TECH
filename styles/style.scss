@@ -360,11 +360,11 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    top: 45%;
 }
 .swiper-button-next,
 .swiper-button-prev {
     position: relative !important;
-    top: 45%;
     &::after {
         display: none;
     }

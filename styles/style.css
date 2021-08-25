@@ -888,12 +888,12 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  top: 45%;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
   position: relative !important;
-  top: 45%;
   background-image: url(../assets/icons/arrow.svg);
   background-repeat: no-repeat;
 }
